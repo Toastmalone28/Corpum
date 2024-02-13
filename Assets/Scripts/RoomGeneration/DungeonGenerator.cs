@@ -1,0 +1,42 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class DungeonGenerator : MonoBehaviour
+{
+    public DungeonGenerationData dungeonGenerationData;
+    private List<Vector2Int> dungeonRooms;
+    public int maxRooms;
+    public int minRooms;
+    private void Start()
+    {
+        //Calls the GenerateDungeon Method using the dungeonGenerationData prefab
+        dungeonRooms = DungeonCrawlerController.GenerateDungeon(dungeonGenerationData);
+        SpawnRooms(dungeonRooms);
+    }
+
+    private void SpawnRooms(IEnumerable<Vector2Int> rooms)
+    {
+        RoomController.instance.LoadRoom("01", 0, 0);
+
+        //instanciates for every roomLocation an empty room at the position x and y coordinates of the roomLocation
+        foreach (Vector2Int roomLocation in rooms) 
+        {
+            int randInt = Random.Range(minRooms, maxRooms + 1);
+            if (randInt < 10)
+            {
+                RoomController.instance.LoadRoom(
+                    "0" + randInt,
+                    roomLocation.x, roomLocation.y);
+            }
+            else
+            {
+                RoomController.instance.LoadRoom(
+                    randInt.ToString(),
+                    roomLocation.x, roomLocation.y);
+            }
+        }
+        //AstarPath.active.Scan();
+    }
+}
