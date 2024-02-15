@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class Effect : MonoBehaviour
 {
-
+    public string effectDescription;
 }

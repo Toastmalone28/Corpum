@@ -7,15 +7,19 @@ using UnityEngine;
 public class Card : MonoBehaviour
 {
     public Card_Object card;
-    private TextMeshPro itemText;
+
+    private Canvas canvas;
+    private TMP_Text itemText;
     private GameObject player;
 
     public bool interactable;
 
     private void Awake()
     {
-        itemText = GetComponentInChildren<TextMeshPro>();
+        canvas = GetComponentInChildren<Canvas>();
+        itemText = canvas.GetComponentInChildren<TMP_Text>();
         itemText.text = card.name;
+        itemText.enabled = false;
         player = GameObject.Find("Player");
     }
 
@@ -45,6 +49,8 @@ public class Card : MonoBehaviour
     }
     public void Interact()
     {
-        Debug.Log("Fortnite battlepass");
+        //add more logic later
+        player.GetComponent<PlayerStats>().inventory.AddItem(card);
+        Destroy(gameObject);
     }
 }

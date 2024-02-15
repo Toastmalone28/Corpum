@@ -5,7 +5,12 @@ using TMPro;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Default Object", menuName = "Inventory System/Items/Default")]
-public class Card_Object : Card_Data
+public class Card_Object : ScriptableObject
 {
-
+    public string cardDescription;
+    public string cardFlavortext;
+    public float curseAmount;
+    public float curseMax;
+    public Rarity rarity;
+    public GameObject prefab;
 }

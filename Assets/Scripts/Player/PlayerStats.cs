@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerStats : MonoBehaviour
 {
     public InventoryObject inventory;
+    public InventoryObject activeCard;
     public float iframes = 0.5f;
     private bool isHit;
     IEnumerator HitTimer()
@@ -30,7 +31,7 @@ public class PlayerStats : MonoBehaviour
     {
         if (GameManager.instance.playerStats[StatsPlayer.hitPoints] <= 0)
         {
-            SceneManager.LoadScene(4, LoadSceneMode.Single);
+            SceneManager.LoadScene(1, LoadSceneMode.Single);
         }
     }
     public void OnCollisionEnter(Collision collision)
@@ -43,7 +44,10 @@ public class PlayerStats : MonoBehaviour
             isHit = true;
             StartCoroutine(HitTimer());
         }
-
-
     }
+    private void OnApplicationQuit()
+    {
+        inventory.Container.Clear();
+    }
+
 }
