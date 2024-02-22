@@ -26,14 +26,13 @@ public class PlayerInteraction : MonoBehaviour
     }
     void Update()
     {
-        itemCheck();
-        openInventory();
+        ItemCheck();
+        OpenInventory();
     }
 
-    private void itemCheck()
+    private void ItemCheck()
     {
-        RaycastHit hit;
-        if (Physics.Raycast(main.transform.position, main.transform.forward, out hit, 5f))
+        if (Physics.Raycast(main.transform.position, main.transform.forward, out RaycastHit hit, 5f))
         {
             Card card = hit.collider.GetComponentInParent<Card>();
             if (card != null)
@@ -54,12 +53,12 @@ public class PlayerInteraction : MonoBehaviour
             text.enabled = false;
         }
     }
-    private void openInventory()
+    private void OpenInventory()
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
             Debug.Log("Fortnite");
-            inventoryMenu.gameObject.SetActive(!inventoryMenu.gameObject.activeSelf);
+            inventoryMenu.SetActive(!inventoryMenu.activeSelf);
         }
     }
 }

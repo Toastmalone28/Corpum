@@ -6,5 +6,4 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Active Card", menuName = "Inventory System/Items/Active Card")]
 public class Card_active : Card_Object
 {
-    public EffectActive effect;
 }

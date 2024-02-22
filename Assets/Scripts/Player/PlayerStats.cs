@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
-    public InventoryObject inventory;
-    public InventoryObject activeCard;
+    public InventoryObject passiveCards;
+    public InventoryObject activeCards;
+    public Image healthbar;
     public float iframes = 0.5f;
     private bool isHit;
     IEnumerator HitTimer()
@@ -20,19 +22,17 @@ public class PlayerStats : MonoBehaviour
         }
         isHit = false;
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-       
-    }
 
     // Update is called once per frame
     void Update()
     {
+        //Add event for health changes!!!
         if (GameManager.instance.playerStats[StatsPlayer.hitPoints] <= 0)
         {
-            SceneManager.LoadScene(1, LoadSceneMode.Single);
+            SceneManager.LoadScene(0, LoadSceneMode.Single);
         }
+        //Add event for health changes!!!
+        healthbar.fillAmount = GameManager.instance.playerStats[StatsPlayer.hitPoints] / 100f;
     }
     public void OnCollisionEnter(Collision collision)
     {
@@ -47,7 +47,8 @@ public class PlayerStats : MonoBehaviour
     }
     private void OnApplicationQuit()
     {
-        inventory.Container.Clear();
+        passiveCards.Container.Clear();
+        activeCards.Container.Clear();
     }
 
 }

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EffectPassive : Effect
 {
-    public float value;
-
+    public override void Apply()
+    {
+        throw new System.NotImplementedException();
+    }
 }

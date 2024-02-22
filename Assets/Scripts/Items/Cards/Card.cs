@@ -7,6 +7,7 @@ using UnityEngine;
 public class Card : MonoBehaviour
 {
     public Card_Object card;
+    public Effect effect;
 
     private Canvas canvas;
     private TMP_Text itemText;
@@ -49,8 +50,23 @@ public class Card : MonoBehaviour
     }
     public void Interact()
     {
-        //add more logic later
-        player.GetComponent<PlayerStats>().inventory.AddItem(card);
+       if (card is Card_active)
+        {
+            if (player.GetComponent<PlayerStats>().activeCards.Container.Count < 2)
+            {
+                player.GetComponent<PlayerStats>().activeCards.AddItem(card);
+            }
+            else
+            {
+                Debug.Log("Player already has 2 active items");
+                return;
+            }
+        }
+        else
+        {
+            player.GetComponent<PlayerStats>().passiveCards.AddItem(card);
+            effect.Apply();
+        }
         Destroy(gameObject);
     }
 }
