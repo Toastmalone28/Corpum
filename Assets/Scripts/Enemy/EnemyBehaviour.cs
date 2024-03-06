@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Pathfinding;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyBehaviour : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class EnemyBehaviour : MonoBehaviour
     public AIDestinationSetter destinationSetter;
     public float distanceToPlayer;
 
+    public Image healthBar;
+    public List<GameObject> targets;
     private void Awake()
     {
         InitializeEnemyStats();
@@ -20,13 +23,14 @@ public class EnemyBehaviour : MonoBehaviour
     {
         destinationSetter = GetComponent<AIDestinationSetter>();
         player = GameObject.Find("Player");
+        healthBar.type = Image.Type.Filled;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        //destinationSetter.target = player.transform;
-
+        destinationSetter.target = player.transform;
+        healthBar.transform.LookAt(player.transform.position);
     }
 
     private void InitializeEnemyStats()
@@ -44,11 +48,32 @@ public class EnemyBehaviour : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("bullet"))
         {
-            enemyStats[StatsEnemies.hitPoints] -= GameManager.instance.gunStats[StatsGun.damage] * 100 / (enemyStats[StatsEnemies.armor] + 100);
-            if (enemyStats[StatsEnemies.hitPoints] <= 0)
+            DealDamage(GameManager.instance.gunStats[StatsGun.damage]);
+        }
+    }
+    public void changeHealthVisibility()
+    {
+        healthBar.gameObject.SetActive(!healthBar.gameObject.activeSelf);
+    }
+
+    public void DealDamage(float damage)
+    {
+        enemyStats[StatsEnemies.hitPoints] -= damage * 100 / (enemyStats[StatsEnemies.armor] + 100);
+        healthBar.GetComponentsInChildren<Image>()[1].fillAmount = enemyStats[StatsEnemies.hitPoints] / 100f;
+        if (enemyStats[StatsEnemies.hitPoints] <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+    public GameObject GetAbilityTrigger()
+    {
+        foreach(GameObject child in targets)
+        {
+            if(child.tag == "AbilityTrigger")
             {
-                Destroy(gameObject);
+                return child.gameObject;
             }
         }
+        return null;
     }
 }

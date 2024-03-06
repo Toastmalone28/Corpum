@@ -18,4 +18,4 @@ MonoBehaviour:
   curseMax: 0
   rarity: 0
   prefab: {fileID: 6182342418793672669, guid: 16ced8ab06d197648969f1451bf7ebe7, type: 3}
-  effect: {fileID: 0}
+  effect: {fileID: 11400000, guid: 6f8b8a790f3dc724f9d74df052ba143e, type: 2}

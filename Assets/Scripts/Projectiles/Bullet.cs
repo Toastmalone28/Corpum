@@ -9,7 +9,7 @@ public class Projectile : MonoBehaviour
     public float impulse = 500f;
 
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
         Rigidbody rb = GetComponent<Rigidbody>();
         rb.AddForce(transform.forward * impulse, ForceMode.Impulse);

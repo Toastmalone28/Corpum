@@ -13,4 +13,5 @@ public class Card_Object : ScriptableObject
     public float curseMax;
     public Rarity rarity;
     public GameObject prefab;
+    public Effect effect;
 }

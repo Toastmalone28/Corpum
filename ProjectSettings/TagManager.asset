@@ -9,6 +9,9 @@ TagManager:
   - Item
   - Menu
   - Hud
+  - RootEnemy
+  - Ability
+  - AbilityTrigger
   layers:
   - Default
   - TransparentFX

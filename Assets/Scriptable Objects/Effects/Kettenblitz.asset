@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a885ae0c2c1915489533ca7226e8468, type: 3}
+  m_Name: Kettenblitz
+  m_EditorClassIdentifier: 
+  effectDescription: 
+  coolDown: 5
+  gameManager: {fileID: 0}
+  projectile: {fileID: 7709793307561907505, guid: 698f2894a431ea54cb636c7c7ca3de21,
+    type: 3}
+  barrel: {fileID: 0}
+  orientation: {fileID: 0}
+  damage: 20
+  explosionRadius: 10
+  maxTargets: 3
+  dischargeTimer: 0.5

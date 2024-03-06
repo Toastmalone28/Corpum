@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
     {
         gunStats = new Dictionary<StatsGun, float>();
         gunStats.Add(StatsGun.clipCapacity, 10f);
-        gunStats.Add(StatsGun.damage, 10f);
+        gunStats.Add(StatsGun.damage, 15f);
         gunStats.Add(StatsGun.critChance, 5f);
         gunStats.Add(StatsGun.critDamage, 20f);
     }

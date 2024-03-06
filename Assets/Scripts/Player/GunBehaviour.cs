@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
@@ -50,26 +51,28 @@ public class GunBehaviour : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && GameManager.instance.gunStats[StatsGun.clipCapacity] > 0 && weaponState == WeaponStates.Ready)
         {
-            GameObject.Instantiate(projectile, barrel.position, orientation.transform.rotation);
-            character.SetTrigger("shoot");
-            GameManager.instance.gunStats[StatsGun.clipCapacity]--;
-            weaponState = WeaponStates.Shooting;
-            StartCoroutine(ShotTimer());
+            Shoot();
         }
 
         if (Input.GetKeyDown(KeyCode.R) && weaponState == WeaponStates.Ready && GameManager.instance.gunStats[StatsGun.clipCapacity] < 10) 
         {
-            character.SetTrigger("reload");
-            GameManager.instance.gunStats[StatsGun.clipCapacity] = 10;
-            weaponState = WeaponStates.Reload;
-            StartCoroutine(ReloadTimer());
+            Reload();
         }
 
-      /*  if (character.GetCurrentAnimatorStateInfo(0).IsName("Human FPS|Human FPSAction"))
-        {
-            weaponState = WeaponStates.Ready;
-        }*/
-      
-        //Debug.Log(weaponState);
+    }
+    public void Reload()
+    {
+        character.SetTrigger("reload");
+        GameManager.instance.gunStats[StatsGun.clipCapacity] = 10;
+        weaponState = WeaponStates.Reload;
+        StartCoroutine(ReloadTimer());
+    }
+    public void Shoot()
+    {
+        GameObject.Instantiate(projectile, barrel.position, orientation.transform.rotation);
+        character.SetTrigger("shoot");
+        GameManager.instance.gunStats[StatsGun.clipCapacity]--;
+        weaponState = WeaponStates.Shooting;
+        StartCoroutine(ShotTimer());
     }
 }

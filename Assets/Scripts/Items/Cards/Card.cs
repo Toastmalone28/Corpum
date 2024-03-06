@@ -7,7 +7,6 @@ using UnityEngine;
 public class Card : MonoBehaviour
 {
     public Card_Object card;
-    public Effect effect;
 
     private Canvas canvas;
     private TMP_Text itemText;
@@ -65,7 +64,7 @@ public class Card : MonoBehaviour
         else
         {
             player.GetComponent<PlayerStats>().passiveCards.AddItem(card);
-            effect.Apply();
+            card.effect.Apply();
         }
         Destroy(gameObject);
     }

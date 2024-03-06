@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f012935958b89c4b926ab68ee9ca2dc, type: 3}
   m_Name: major health buff
   m_EditorClassIdentifier: 
-  effectDescription: 
-  amount: 0
-  manager: {fileID: 0}
+  effectDescription: heals the player by 10 on pick up
+  gameManager: {fileID: 0}
+  amount: 50
