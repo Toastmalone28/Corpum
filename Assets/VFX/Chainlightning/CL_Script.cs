@@ -8,15 +8,15 @@ public class CL_Script : MonoBehaviour
     public GameObject Sparkball;
     public GameObject Lightning;
 
-     void FixedUpdate()
+    void FixedUpdate()
     {
-        if(Input.GetKey(KeyCode.F))
-    {
-     
+        if (Input.GetKey(KeyCode.F))
+        {
+
             Vector3 Startlocation = transform.forward;
             Quaternion Q = transform.rotation * Quaternion.Euler(90, 0, 0);
 
-            GameObject attack = Instantiate((GameObject)AssetDatabase.LoadAssetAtPath(Sparkball / Lightning, typeof(GameObject)), Startlocation, Q);
+           // GameObject attack = Instantiate((GameObject)AssetDatabase.LoadAssetAtPath(Sparkball / Lightning, typeof(GameObject)), Startlocation, Q);
 
 
             Plane playerplane = new Plane(Vector3.up, transform.position);
@@ -29,5 +29,6 @@ public class CL_Script : MonoBehaviour
                 Vector3 targetpoint = ray.GetPoint(hitdist);
             }
 
+        }
     }
 }

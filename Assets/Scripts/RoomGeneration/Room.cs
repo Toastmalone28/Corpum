@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Room : MonoBehaviour
 {
-
     public int Width;
     public int Height;
 
@@ -33,10 +32,13 @@ public class Room : MonoBehaviour
 
     public List<Wall> walls = new List<Wall>();
 
+    // Enemies in the room
+    public List<GameObject> enemies = new List<GameObject>();
+
     // Start is called before the first frame update
     void Start()
     {
-        if(RoomController.instance == null)
+        if (RoomController.instance == null)
         {
             return;
         }
@@ -45,7 +47,7 @@ public class Room : MonoBehaviour
         foreach (Door d in ds)
         {
             doors.Add(d);
-            switch(d.doorType)
+            switch (d.doorType)
             {
                 case Door.DoorType.right:
                     rightDoor = d;
@@ -69,7 +71,7 @@ public class Room : MonoBehaviour
             switch (w.wallType)
             {
                 case Wall.WallType.right:
-                    rightWall = w; 
+                    rightWall = w;
                     break;
                 case Wall.WallType.left:
                     leftWall = w;
@@ -83,28 +85,28 @@ public class Room : MonoBehaviour
             }
         }
 
-        //gives the room a name and coordinates, and transforms it using the width and height
+        // gives the room a name and coordinates, and transforms it using the width and height
         RoomController.instance.RegisterRoom(this);
     }
 
     private void Update()
     {
-        if(name.Contains("End") && !updatedDoors)
+        if (name.Contains("End") && !updatedDoors)
         {
             RemoveUnconnectedWalls();
             RemoveUnconnectedDoors();
-            //updatedDoors = true;
-        }        
+            // updatedDoors = true;
+        }
     }
 
     public void RemoveUnconnectedDoors()
     {
-        foreach(Door door in doors)
+        foreach (Door door in doors)
         {
-            switch(door.doorType)
+            switch (door.doorType)
             {
                 case Door.DoorType.right:
-                    if(GetRight() == null)
+                    if (GetRight() == null)
                         door.gameObject.SetActive(false);
                     break;
                 case Door.DoorType.left:
@@ -127,30 +129,31 @@ public class Room : MonoBehaviour
     {
         foreach (Wall wall in walls)
         {
-            switch(wall.wallType)
+            switch (wall.wallType)
             {
                 case Wall.WallType.right:
-                    if(GetRight() != null)
+                    if (GetRight() != null)
                         wall.gameObject.SetActive(false);
                     break;
                 case Wall.WallType.left:
-                    if(GetLeft() != null)
+                    if (GetLeft() != null)
                         wall.gameObject.SetActive(false);
                     break;
                 case Wall.WallType.top:
-                    if(GetTop() != null)
+                    if (GetTop() != null)
                         wall.gameObject.SetActive(false);
                     break;
                 case Wall.WallType.bottom:
-                    if(GetBottom() != null)
+                    if (GetBottom() != null)
                         wall.gameObject.SetActive(false);
                     break;
             }
         }
     }
+
     public Room GetRight()
     {
-        if(RoomController.instance.DoesRoomExist(X + 1, Y))
+        if (RoomController.instance.DoesRoomExist(X + 1, Y))
         {
             return RoomController.instance.FindRoom(X + 1, Y);
         }
@@ -183,13 +186,41 @@ public class Room : MonoBehaviour
 
     void OnDrawGizmos()
     {
-        //indicates the width and height for better visibility
+        // indicates the width and height for better visibility
         Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(transform.position + new Vector3 (Width / 2, 0, Height / 2), new Vector3(Width, 0, Height));
+        Gizmos.DrawWireCube(transform.position + new Vector3(Width / 2, 0, Height / 2), new Vector3(Width, 0, Height));
     }
 
     public Vector3 GetRoomCentre()
     {
         return new Vector3(X * Width, Y * Height, 0);
+    }
+
+    // fügt gegner hinzu
+    public void AddEnemy(GameObject enemy)
+    {
+        enemies.Add(enemy);
+    }
+
+    // removt gegner
+    public void RemoveEnemy(GameObject enemy)
+    {
+        enemies.Remove(enemy);
+    }
+
+    // Checkt ob alle gegner tot sind
+    public bool AllEnemiesDead()
+    {
+        foreach (GameObject enemy in enemies)
+        {
+            if (enemy != null)
+            {
+                // wenn noch jemand lebt wird false wieder gegeben
+                return false;
+            }
+        }
+
+        // Alle sind tot
+        return true;
     }
 }

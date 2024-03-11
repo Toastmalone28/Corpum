@@ -29,7 +29,7 @@ public class PlayerStats : MonoBehaviour
         //Add event for health changes!!!
         if (GameManager.instance.playerStats[StatsPlayer.hitPoints] <= 0)
         {
-            SceneManager.LoadScene(0, LoadSceneMode.Single);
+            SceneManager.LoadScene(2, LoadSceneMode.Single);
         }
         //Add event for health changes!!!
         healthbar.fillAmount = GameManager.instance.playerStats[StatsPlayer.hitPoints] / 100f;

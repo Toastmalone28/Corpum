@@ -19,10 +19,10 @@ public class EnemyBehaviour : MonoBehaviour
         InitializeEnemyStats();
     }
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         destinationSetter = GetComponent<AIDestinationSetter>();
-        player = GameObject.Find("Player");
+        player = GameObject.FindWithTag("Player");
         healthBar.type = Image.Type.Filled;
     }
 
@@ -75,5 +75,14 @@ public class EnemyBehaviour : MonoBehaviour
             }
         }
         return null;
+    }
+
+    public void ScaleEnemyStats(float value)
+    {
+        enemyStats[StatsEnemies.armor] *= value;
+        enemyStats[StatsEnemies.damage] *= value;
+        enemyStats[StatsEnemies.maxHitPoints] *= value;
+
+        transform.localScale *= value;
     }
 }
