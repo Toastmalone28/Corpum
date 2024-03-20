@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
@@ -14,13 +15,9 @@ public class Card : MonoBehaviour
 
     public bool interactable;
 
-    private void Awake()
+    private void Start()
     {
-        canvas = GetComponentInChildren<Canvas>();
-        itemText = canvas.GetComponentInChildren<TMP_Text>();
-        itemText.text = card.name;
-        itemText.enabled = false;
-        player = GameObject.Find("Player");
+        Activate();
     }
 
     void Update()
@@ -67,5 +64,13 @@ public class Card : MonoBehaviour
             card.effect.Apply();
         }
         Destroy(gameObject);
+    }
+    public void Activate()
+    {
+        canvas = GetComponentInChildren<Canvas>();
+        itemText = canvas.GetComponentInChildren<TMP_Text>();
+        itemText.text = card.name;
+        itemText.enabled = false;
+        player = GameObject.Find("Player");
     }
 }

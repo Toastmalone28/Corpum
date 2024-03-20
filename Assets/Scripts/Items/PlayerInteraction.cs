@@ -27,6 +27,7 @@ public class PlayerInteraction : MonoBehaviour
         main = GetComponentInChildren<Camera>();
         canvas = GameObject.FindGameObjectWithTag("Hud");
         text = canvas.GetComponentInChildren<TextMeshProUGUI>();
+        text.enabled = false;
         scene = SceneManager.GetActiveScene();
     }
     void Update()

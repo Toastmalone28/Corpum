@@ -150,3 +150,7 @@ MonoBehaviour:
   lifeTime: 2
   impulse: 50
   effect: {fileID: 11400000, guid: 8055e3daf41838345a7d1510dee8c2bc, type: 2}
+  SparkBall: {fileID: 1363321607824346806, guid: 93ed6692f7363d8429e6834bc57594ce,
+    type: 3}
+  ChainLightning: {fileID: 2675404943580204627, guid: 0fd232b3699b12b4ea4a1e68e32fde56,
+    type: 3}

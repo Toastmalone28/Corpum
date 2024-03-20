@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Linq;
+using System;
 
 public class RoomInfo
 {
@@ -26,6 +27,7 @@ public class RoomController : MonoBehaviour
 
     bool isLoadingRoom = false;
     bool spawnedBossRoom = false;
+    bool spawnedItemRoom = false;
     bool updatedRooms = false;
 
     private void Awake()
@@ -59,7 +61,12 @@ public class RoomController : MonoBehaviour
             if(!spawnedBossRoom)
             {
                 StartCoroutine(SpawnBossRoom());
-            } else if(spawnedBossRoom && !updatedRooms) 
+            }
+            if (!spawnedItemRoom)
+            {
+                StartCoroutine(SpawnItemRoom());
+            }
+            else if(spawnedBossRoom && !updatedRooms) 
             { 
                 foreach(Room room in loadedRooms)
                 {
@@ -77,6 +84,21 @@ public class RoomController : MonoBehaviour
         isLoadingRoom = true;
 
         StartCoroutine(LoadRoomRoutine(currentLoadRoomData));
+    }
+
+    IEnumerator SpawnItemRoom()
+    {
+        spawnedItemRoom = true;
+        yield return new WaitForSeconds(0.5f);
+        if (spawnedBossRoom)
+        {
+            Room itemRoom = loadedRooms[UnityEngine.Random.Range(1, loadedRooms.Count - 1)];
+            Room tempRoom = new Room(itemRoom.X, itemRoom.Y);
+            Destroy(itemRoom.gameObject);
+            var roomToRemove = loadedRooms.Single(r => r.X == tempRoom.X && r.Y == tempRoom.Y);
+            loadedRooms.Remove(roomToRemove);
+            LoadRoom("Item", tempRoom.X, tempRoom.Y);
+        }
     }
 
     IEnumerator SpawnBossRoom()

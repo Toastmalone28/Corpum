@@ -16,6 +16,6 @@ MonoBehaviour:
   cardFlavortext: 
   curseAmount: 0
   curseMax: 0
-  rarity: 0
+  rarity: 1
   prefab: {fileID: 6182342418793672669, guid: 45209725e2605d545a48a1a8d71d66bc, type: 3}
   effect: {fileID: 11400000, guid: 7042da4e291e26448a13fa11e549d08f, type: 2}
