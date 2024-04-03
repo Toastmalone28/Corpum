@@ -12,6 +12,8 @@ TagManager:
   - RootEnemy
   - Ability
   - AbilityTrigger
+  - Image
+  - Text
   layers:
   - Default
   - TransparentFX

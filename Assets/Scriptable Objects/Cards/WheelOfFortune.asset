@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b265e29df73e13345b67f5194d5773f7, type: 3}
   m_Name: WheelOfFortune
   m_EditorClassIdentifier: 
-  cardDescription: 
-  cardFlavortext: 
+  cardDescription: zeigt die leben der gegner an
+  cardFlavortext: card flavor text
   curseAmount: 0
   curseMax: 0
   rarity: 0
   prefab: {fileID: 6182342418793672669, guid: 66f0e065d70af5540ae1aa22b8a831c1, type: 3}
   effect: {fileID: 11400000, guid: b49e70fff41fb85488781ff6fd88dac2, type: 2}
+  coolDownTimer: 0
+  fillAmount: 0

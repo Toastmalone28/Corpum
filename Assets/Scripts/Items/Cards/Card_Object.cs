@@ -14,4 +14,6 @@ public class Card_Object : ScriptableObject
     public Rarity rarity;
     public GameObject prefab;
     public Effect effect;
+    public float coolDownTimer = 0f;
+    public float fillAmount;
 }

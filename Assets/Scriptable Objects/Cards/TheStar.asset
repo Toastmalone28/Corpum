@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e132b6e46581a0c4d8ab9214f8fb9ec6, type: 3}
   m_Name: TheStar
   m_EditorClassIdentifier: 
-  cardDescription: 
-  cardFlavortext: 
+  cardDescription: "schie\xDFt halt nen kettenblitz"
+  cardFlavortext: card flavor text
   curseAmount: 0
   curseMax: 0
   rarity: 3
   prefab: {fileID: 6182342418793672669, guid: 08deed1de137f2d41b24f41e424df356, type: 3}
   effect: {fileID: 11400000, guid: 8055e3daf41838345a7d1510dee8c2bc, type: 2}
+  coolDownTimer: -10.320046
+  fillAmount: 1

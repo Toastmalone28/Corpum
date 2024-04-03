@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Card : MonoBehaviour
 {
@@ -15,7 +17,7 @@ public class Card : MonoBehaviour
 
     public bool interactable;
 
-    private void Start()
+    private void Awake()
     {
         Activate();
     }
@@ -24,6 +26,7 @@ public class Card : MonoBehaviour
     {
         itemText.transform.LookAt(player.transform.position);
     }
+
 
 
     protected void OnTriggerEnter(Collider other)
@@ -71,6 +74,6 @@ public class Card : MonoBehaviour
         itemText = canvas.GetComponentInChildren<TMP_Text>();
         itemText.text = card.name;
         itemText.enabled = false;
-        player = GameObject.Find("Player");
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 }

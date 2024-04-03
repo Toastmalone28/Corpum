@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ShowInventory : MonoBehaviour
 {
@@ -22,6 +23,15 @@ public class ShowInventory : MonoBehaviour
     void Update()
     {
         UpdateDisplay();
+        UpdateUICooldown();
+    }
+
+    private void UpdateUICooldown()
+    {
+        foreach(KeyValuePair<Card_Object,GameObject> item in itemsDisplayed)
+        {
+            item.Value.GetComponent<Image>().fillAmount = item.Key.fillAmount;
+        }
     }
 
     public void UpdateDisplay()
@@ -32,11 +42,32 @@ public class ShowInventory : MonoBehaviour
             {
                 var obj = Instantiate(inventory.Container[i].prefab, Vector3.zero, Quaternion.identity, transform);
                 obj.GetComponent<RectTransform>().localPosition = GetPosition(i);
-                obj.GetComponentInChildren<TextMeshProUGUI>().text = inventory.Container[i].name;
+                //obj.GetComponentInChildren<TextMeshProUGUI>().text = inventory.Container[i].name;
+                UpdateCardText(obj, i);
                 itemsDisplayed.Add(inventory.Container[i], obj);
             }
         }
     }
+
+    private void UpdateCardText(GameObject obj, int index)
+    {
+        foreach (var item in obj.GetComponentsInChildren<TextMeshProUGUI>())
+        {
+            switch (item.name)
+            {
+                case "Name":
+                    item.text = inventory.Container[index].name;
+                    break;
+                case "Description":
+                    item.text = inventory.Container[index].cardDescription;
+                    break;
+                case "Lore":
+                    item.text = inventory.Container[index].cardFlavortext;
+                    break;
+            }
+        }
+    }
+
     public void CreateDisplay()
     {
         for (int i = 0; i < inventory.Container.Count; i++) 

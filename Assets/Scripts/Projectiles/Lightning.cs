@@ -30,6 +30,10 @@ public class Lightning : Projectile
             StartCoroutine(Explode(collision));
             LightningAnimation(collision.gameObject);
         }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     private IEnumerator Explode(Collision collision)
