@@ -955,7 +955,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
-  room: {fileID: 0}
 --- !u!1 &323916531
 GameObject:
   m_ObjectHideFlags: 0
@@ -1860,7 +1859,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 1
-  room: {fileID: 0}
 --- !u!1001 &509356490
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7094,7 +7092,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 2
-  room: {fileID: 0}
 --- !u!1 &1642266797
 GameObject:
   m_ObjectHideFlags: 0
@@ -7223,6 +7220,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1649760097}
   - component: {fileID: 1649760096}
+  - component: {fileID: 1649760098}
   m_Layer: 10
   m_Name: Room
   m_TagString: Untagged
@@ -7275,6 +7273,27 @@ Transform:
   - {fileID: 1756602313}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1649760098
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649760095}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 67.76917, y: 19.129723, z: 66.55671}
+  m_Center: {x: 35.26224, y: 7.6746025, z: 35.05969}
 --- !u!1 &1652656928
 GameObject:
   m_ObjectHideFlags: 0
@@ -8512,7 +8531,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 3
-  room: {fileID: 0}
 --- !u!1 &1972683997
 GameObject:
   m_ObjectHideFlags: 0

@@ -23,19 +23,7 @@ public class DungeonGenerator : MonoBehaviour
         //instanciates for every roomLocation an empty room at the position x and y coordinates of the roomLocation
         foreach (Vector2Int roomLocation in rooms) 
         {
-            int randInt = Random.Range(minRooms, maxRooms + 1);
-            if (randInt < 10)
-            {
-                RoomController.instance.LoadRoom(
-                    "0" + randInt,
-                    roomLocation.x, roomLocation.y);
-            }
-            else
-            {
-                RoomController.instance.LoadRoom(
-                    randInt.ToString(),
-                    roomLocation.x, roomLocation.y);
-            }
+            RoomController.instance.LoadRoom(RoomController.instance.GetRandomRoomName(), roomLocation.x, roomLocation.y);
         }
         //AstarPath.active.Scan();
     }

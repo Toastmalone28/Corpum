@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Linq;
 using System;
+using Random = UnityEngine.Random;
 
 public class RoomInfo
 {
@@ -20,6 +21,8 @@ public class RoomController : MonoBehaviour
     string currentWorldName = "Basement";
 
     RoomInfo currentLoadRoomData;
+
+    public Room currRoom;
 
     Queue<RoomInfo> loadRoomQueue = new Queue<RoomInfo>();
 
@@ -73,6 +76,7 @@ public class RoomController : MonoBehaviour
                     room.RemoveUnconnectedDoors();
                     room.RemoveUnconnectedWalls();
                 }
+                UpdateRooms();
                 updatedRooms = true;
                 Debug.Log("gaming");
                 AstarPath.active.Scan();
@@ -162,6 +166,11 @@ public class RoomController : MonoBehaviour
 
             isLoadingRoom = false;
 
+            if(loadedRooms.Count == 0)
+            {
+                PositionController.instance.currRoom = room;
+            }
+
             loadedRooms.Add(room);
         }
         else
@@ -176,8 +185,63 @@ public class RoomController : MonoBehaviour
         return loadedRooms.Find(item => item.X == x && item.Y == y) != null;
     }
 
+    public void OnPlayerEnterRoom(Room room)
+    {
+        PositionController.instance.currRoom = room;
+        currRoom = room;
+
+        UpdateRooms();
+    }
+
+    private void UpdateRooms()
+    {
+        foreach(Room room in loadedRooms)
+        {
+            if(currRoom != room)
+            {
+                EnemyBehaviour[] enemies = room.GetComponentsInChildren<EnemyBehaviour>();
+                if(room.enemies != null)
+                {
+                    foreach(EnemyBehaviour enemy in enemies)
+                    {
+                        if (room.enemies.Contains(enemy) == false)
+                        {
+                            room.enemies.Add(enemy);
+                        }
+                        enemy.gameObject.SetActive(false);
+                        Debug.Log("not in room");
+                    }
+                }
+            }
+            else
+            {
+                if (room.enemies != null)
+                {
+                    foreach (EnemyBehaviour enemy in room.enemies)
+                    {
+                        enemy.gameObject.SetActive(true);
+                        Debug.Log("in room");
+                    }
+                }
+            }
+        }
+    }
+
     public Room FindRoom (int x, int y)
     {
         return loadedRooms.Find(item => item.X == x && item.Y == y);
     }
+
+    public string GetRandomRoomName()
+    {
+        string[] possibleRooms = new string[]
+        {
+            "05",
+            "06",
+            "07"
+        };
+
+        return possibleRooms[Random.Range(0, possibleRooms.Length)];
+    }
+
 }

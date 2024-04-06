@@ -33,7 +33,7 @@ public class Room : MonoBehaviour
     public List<Wall> walls = new List<Wall>();
 
     // Enemies in the room
-    public List<GameObject> enemies = new List<GameObject>();
+    public List<EnemyBehaviour> enemies = new List<EnemyBehaviour>();
 
     // Start is called before the first frame update
     void Start()
@@ -95,7 +95,7 @@ public class Room : MonoBehaviour
         {
             RemoveUnconnectedWalls();
             RemoveUnconnectedDoors();
-            // updatedDoors = true;
+            updatedDoors = true;
         }
     }
 
@@ -196,31 +196,11 @@ public class Room : MonoBehaviour
         return new Vector3(X * Width, Y * Height, 0);
     }
 
-    // fügt gegner hinzu
-    public void AddEnemy(GameObject enemy)
+    private void OnTriggerEnter(Collider other)
     {
-        enemies.Add(enemy);
-    }
-
-    // removt gegner
-    public void RemoveEnemy(GameObject enemy)
-    {
-        enemies.Remove(enemy);
-    }
-
-    // Checkt ob alle gegner tot sind
-    public bool AllEnemiesDead()
-    {
-        foreach (GameObject enemy in enemies)
+        if(other.tag == "Player")
         {
-            if (enemy != null)
-            {
-                // wenn noch jemand lebt wird false wieder gegeben
-                return false;
-            }
+            RoomController.instance.OnPlayerEnterRoom(this);
         }
-
-        // Alle sind tot
-        return true;
     }
 }

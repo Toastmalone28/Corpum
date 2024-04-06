@@ -17,13 +17,14 @@ public class EnemyBehaviour : MonoBehaviour
     private void Awake()
     {
         InitializeEnemyStats();
+        destinationSetter = GetComponent<AIDestinationSetter>();
+        player = GameObject.FindWithTag("Player");
+        healthBar.type = Image.Type.Filled;
     }
     // Start is called before the first frame update
     public void Start()
     {
-        destinationSetter = GetComponent<AIDestinationSetter>();
-        player = GameObject.FindWithTag("Player");
-        healthBar.type = Image.Type.Filled;
+
     }
 
     // Update is called once per frame

@@ -30,7 +30,7 @@ public class EnemySpawn : MonoBehaviour
                 Room currentRoom = GetComponent<Room>();
                 if (currentRoom != null)
                 {
-                    currentRoom.AddEnemy(spawnedEnemy);
+                    //currentRoom.AddEnemy(spawnedEnemy);
                 }
             }
 

@@ -220,7 +220,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 3
-  room: {fileID: 0}
 --- !u!1001 &104746059
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -469,7 +468,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
-  room: {fileID: 0}
 --- !u!1001 &614361292
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -688,6 +686,7 @@ GameObject:
   m_Component:
   - component: {fileID: 869654746}
   - component: {fileID: 869654745}
+  - component: {fileID: 869654747}
   m_Layer: 0
   m_Name: BossRoom
   m_TagString: Untagged
@@ -742,6 +741,27 @@ Transform:
   - {fileID: 149514565}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &869654747
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869654744}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 67.7863, y: 28.540983, z: 67.939865}
+  m_Center: {x: 34.656708, y: 13.77049, z: 35.331757}
 --- !u!1001 &1112869786
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1279,7 +1299,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 1
-  room: {fileID: 0}
 --- !u!1001 &2117617414
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1377,7 +1396,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 2
-  room: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
