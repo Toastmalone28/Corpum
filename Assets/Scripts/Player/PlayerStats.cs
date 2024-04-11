@@ -40,7 +40,7 @@ public class PlayerStats : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy") && !isHit)
         {
             GameManager.instance.playerStats[StatsPlayer.hitPoints] -= 10; //hier später den jeweiligen Gegner DMG einfügen
-            Debug.Log(GameManager.instance.playerStats[StatsPlayer.hitPoints]);
+            //Debug.Log(GameManager.instance.playerStats[StatsPlayer.hitPoints]);
             isHit = true;
             StartCoroutine(HitTimer());
         }

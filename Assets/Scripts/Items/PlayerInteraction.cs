@@ -35,8 +35,13 @@ public class PlayerInteraction : MonoBehaviour
     //event hinzufügen für performance reasons
     {
         ItemCheck();
-        UseActiveItem();
+        
         UpdateItemCooldown();
+    }
+
+    private void Update()
+    {
+        UseActiveItem();
     }
 
     private void UpdateItemCooldown()
@@ -44,7 +49,7 @@ public class PlayerInteraction : MonoBehaviour
         foreach (Card_Object card in GetComponent<PlayerStats>().activeCards.Container)
         {
             card.coolDownTimer -= Time.deltaTime;
-            Debug.Log(card.coolDownTimer);
+            //Debug.Log(card.coolDownTimer);
             UpdateUICooldown(card);
         }
         foreach (Card_Object card in GetComponent<PlayerStats>().passiveCards.Container)
