@@ -11,9 +11,12 @@ public class Movement : MonoBehaviour
     public float groundDrag;
 
     public float jumpForce;
+    public float dashForce;
     public float jumpCooldown;
+    public float dashCooldown;
     public float airMultiplier;
     bool readyToJump = true;
+    bool readyToDash = true;
     private Animator character;
 
     [Header("Ground Check")]
@@ -82,6 +85,15 @@ public class Movement : MonoBehaviour
 
             Invoke(nameof(ResetJump), jumpCooldown);
         }
+
+        if (Input.GetKey(KeyCode.LeftShift) && readyToDash)
+        {
+            readyToDash = false;
+
+            Dash();
+
+            Invoke(nameof(ResetDash), dashCooldown);
+        }
     }
 
     private void MovePlayer()
@@ -113,10 +125,21 @@ public class Movement : MonoBehaviour
 
         rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
     }
+
+    private void Dash()
+    {
+        rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+
+        rb.AddForce(moveDirection * dashForce, ForceMode.VelocityChange);
+    }
+
     private void ResetJump()
     {
         readyToJump = true;
     }
 
-
+    private void ResetDash()
+    {
+        readyToDash = true;
+    }
 }
