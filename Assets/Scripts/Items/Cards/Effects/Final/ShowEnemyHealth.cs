@@ -9,9 +9,12 @@ public class ShowEnemyHealth : Effect
     public UnityEvent showHealth;
     public override void Apply()
     {
-        foreach(var enemy in GameObject.FindGameObjectsWithTag("Enemy"))
+        foreach (Room room in RoomController.instance.loadedRooms)
         {
-            showHealth.AddListener(enemy.GetComponent<EnemyBehaviour>().changeHealthVisibility);
+            foreach (var enemy in room.enemies)
+            {
+                showHealth.AddListener(enemy.GetComponent<EnemyBehaviour>().changeHealthVisibility);
+            }
         }
         showHealth.Invoke();
     }
