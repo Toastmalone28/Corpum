@@ -123,6 +123,61 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &71430266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 71430267}
+  - component: {fileID: 71430268}
+  m_Layer: 0
+  m_Name: Grid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &71430267
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71430266}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 872140143}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &71430268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71430266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0ef29c47beedd1438dac8c13b4fb5bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  grid:
+    columns: 0
+    rows: 0
+    verticalOffset: 65
+    horizontalOffset: 42
+    gridSizeVertical: 60
+    gridSizeHorizontal: 40
+  gridTile: {fileID: 7771525981320170228, guid: 71cf9b3ee2910aa40b6244ecf724ba80,
+    type: 3}
+  availablePoints: []
 --- !u!1001 &184613653
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -950,6 +1005,7 @@ GameObject:
   - component: {fileID: 872140143}
   - component: {fileID: 872140144}
   - component: {fileID: 872140145}
+  - component: {fileID: 872140146}
   m_Layer: 0
   m_Name: penis
   m_TagString: Untagged
@@ -970,6 +1026,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 71430267}
   - {fileID: 750794051}
   - {fileID: 592371456}
   - {fileID: 1613703919}
@@ -1034,6 +1091,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 69.8444, y: 12.476597, z: 70.22961}
   m_Center: {x: 34.4222, y: 5.7382984, z: 34.614803}
+--- !u!114 &872140146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872140142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a6b78f4b74747c43992d23cd75d80c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grid: {fileID: 71430268}
+  spawnerData:
+  - name: Worms
+    spawnerData: {fileID: 11400000, guid: e3c0a78fdad1d4d4b996ebae85ddfa6f, type: 2}
+  player: {fileID: 0}
 --- !u!1001 &1116724828
 PrefabInstance:
   m_ObjectHideFlags: 0

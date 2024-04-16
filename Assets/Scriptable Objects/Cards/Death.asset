@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b265e29df73e13345b67f5194d5773f7, type: 3}
+  m_Name: Death
+  m_EditorClassIdentifier: 
+  cardDescription: '%-Instakill'
+  cardFlavortext: card flavor text
+  curseAmount: 0
+  curseMax: 0
+  rarity: 3
+  prefab: {fileID: 0}
+  effect: {fileID: 11400000, guid: 663651e766602bc41b42224df49d0de7, type: 2}
+  coolDownTimer: 0
+  fillAmount: 0

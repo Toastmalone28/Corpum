@@ -11,10 +11,12 @@ public class EnemyBuff : Effect
     public UnityEvent buffEnemies;
     public override void Apply()
     {
-        foreach(var enemy in GameObject.FindGameObjectsWithTag("Enemy"))
+        foreach(Room room in RoomController.instance.loadedRooms)
         {
-            //buffEnemies.AddListener(enemy.GetComponent<EnemyBehaviour>().ScaleEnemyStats(value));
-            buffEnemies.AddListener(new UnityAction(() => { enemy.GetComponent<EnemyBehaviour>().ScaleEnemyStats(value); }));
+            foreach (var enemy in room.enemies)
+            {
+                buffEnemies.AddListener(new UnityAction(() => { enemy.GetComponent<EnemyBehaviour>().ScaleEnemyStats(value); }));
+            }
         }
         buffEnemies.Invoke();
     }

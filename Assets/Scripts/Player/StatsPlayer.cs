@@ -8,5 +8,5 @@ public enum StatsPlayer
     hitPoints,
     armor,
     movementSpeed,
-
+    instakill
 }

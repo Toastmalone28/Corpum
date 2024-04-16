@@ -47,6 +47,15 @@ public class EnemyBehaviour : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
+        if (GameManager.instance.playerStats[StatsPlayer.instakill] == 1f)
+        {
+            if (Random.value * 100 < 5)
+            {
+                Destroy(gameObject);
+                Debug.Log("INSTAKILL!!!111!!");
+                return;
+            }
+        }
         if (collision.gameObject.CompareTag("bullet"))
         {
             DealDamage(GameManager.instance.gunStats[StatsGun.damage]);

@@ -29,14 +29,16 @@ public class PlayerInteraction : MonoBehaviour
         text.enabled = false;
         scene = SceneManager.GetActiveScene();
         uiController = UIManager.GetComponent<UserInterfaceController>();
-        //keybinds = GetComponent<Keybinds>();
     }
     void FixedUpdate()
-    //event hinzufügen für performance reasons
     {
         ItemCheck();
-        UseActiveItem();
         UpdateItemCooldown();
+    }
+
+    private void Update()
+    {
+        UseActiveItem();
     }
 
     private void UpdateItemCooldown()
@@ -44,7 +46,6 @@ public class PlayerInteraction : MonoBehaviour
         foreach (Card_Object card in GetComponent<PlayerStats>().activeCards.Container)
         {
             card.coolDownTimer -= Time.deltaTime;
-            Debug.Log(card.coolDownTimer);
             UpdateUICooldown(card);
         }
         foreach (Card_Object card in GetComponent<PlayerStats>().passiveCards.Container)
@@ -82,18 +83,13 @@ public class PlayerInteraction : MonoBehaviour
         }
     }
 
-
-    //sauber machen
-    //sauber machen
-    //sauber machen
     private void UseActiveItem()
     {
         PlayerStats stats = GetComponent<PlayerStats>();
 
-        //Klasse Keybinds ist extrem langsam??
         if(stats.activeCards.Container.Count > 0)
         {
-            if (Input.GetKeyDown(KeyCode.Alpha1))
+            if (Input.GetKeyDown(keybinds.active1))
             {
                 Card_Object card1 = stats.activeCards.Container[0];
                 Debug.Log("Input detected: 1");
