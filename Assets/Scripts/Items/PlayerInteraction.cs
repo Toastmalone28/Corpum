@@ -8,6 +8,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using static System.Runtime.CompilerServices.RuntimeHelpers;
 
 public class PlayerInteraction : MonoBehaviour
 {
@@ -28,14 +29,16 @@ public class PlayerInteraction : MonoBehaviour
         text.enabled = false;
         scene = SceneManager.GetActiveScene();
         uiController = UIManager.GetComponent<UserInterfaceController>();
-        //keybinds = GetComponent<Keybinds>();
     }
     void FixedUpdate()
-    //event hinzufügen für performance reasons
     {
         ItemCheck();
-        UseActiveItem();
         UpdateItemCooldown();
+    }
+
+    private void Update()
+    {
+        UseActiveItem();
     }
 
     private void UpdateItemCooldown()
@@ -43,7 +46,6 @@ public class PlayerInteraction : MonoBehaviour
         foreach (Card_Object card in GetComponent<PlayerStats>().activeCards.Container)
         {
             card.coolDownTimer -= Time.deltaTime;
-            Debug.Log(card.coolDownTimer);
             UpdateUICooldown(card);
         }
         foreach (Card_Object card in GetComponent<PlayerStats>().passiveCards.Container)
@@ -81,31 +83,36 @@ public class PlayerInteraction : MonoBehaviour
         }
     }
 
-
-    //sauber machen
-    //sauber machen
-    //sauber machen
     private void UseActiveItem()
     {
-        //Klasse Keybinds ist extrem langsam??
-        if (Input.GetKeyDown(KeyCode.Alpha1)){
-            if(GetComponent<PlayerStats>().activeCards.Container[0] != null
-            && GetComponent<PlayerStats>().activeCards.Container[0].coolDownTimer <= 0.0f)
+        PlayerStats stats = GetComponent<PlayerStats>();
+
+        if(stats.activeCards.Container.Count > 0)
+        {
+            if (Input.GetKeyDown(keybinds.active1))
             {
-                GetComponent<PlayerStats>().activeCards.Container[0].effect.Apply();
-                GetComponent<PlayerStats>().activeCards.Container[0].coolDownTimer =
-                GetComponent<PlayerStats>().activeCards.Container[0].effect.coolDown;
+                Card_Object card1 = stats.activeCards.Container[0];
+                Debug.Log("Input detected: 1");
+                if (card1 != null
+                && card1.coolDownTimer <= 0.0f)
+                {
+                    card1.effect.Apply();
+                    card1.coolDownTimer =
+                    card1.effect.coolDown;
+                }
             }
         }
+        
 
         if (Input.GetKeyDown(keybinds.active2))
         {
-            if(GetComponent<PlayerStats>().activeCards.Container[1] != null
-            && GetComponent<PlayerStats>().activeCards.Container[1].coolDownTimer <= 0.0f)
+            Card_Object card2 = stats.activeCards.Container[1];
+            if (card2 != null
+            && card2.coolDownTimer <= 0.0f)
             {
-                GetComponent<PlayerStats>().activeCards.Container[1].effect.Apply();
-                GetComponent<PlayerStats>().activeCards.Container[1].coolDownTimer =
-                GetComponent<PlayerStats>().activeCards.Container[1].effect.coolDown;
+                card2.effect.Apply();
+                card2.coolDownTimer =
+                card2.effect.coolDown;
             }
         }
     }

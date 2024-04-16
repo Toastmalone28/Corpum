@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
         playerStats.Add(StatsPlayer.hitPoints, 100f);
         playerStats.Add(StatsPlayer.armor, 1f);
         playerStats.Add(StatsPlayer.movementSpeed, 10f);
+        playerStats.Add(StatsPlayer.instakill, 0f);
     }
 
     private void InitializeGunStats()
