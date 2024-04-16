@@ -1,4 +1,5 @@
 using JetBrains.Annotations;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
@@ -64,7 +65,17 @@ public class GunBehaviour : MonoBehaviour
             Reload();
         }
 
+        if (Input.GetMouseButtonDown(1))
+        {
+            Swordstrike();
+        }
     }
+
+    private void Swordstrike()
+    {
+        character.SetTrigger("swordstrike");
+    }
+
     public void Reload()
     {
         character.SetTrigger("reload");
