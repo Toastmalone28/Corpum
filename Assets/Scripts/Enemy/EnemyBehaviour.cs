@@ -11,6 +11,7 @@ public class EnemyBehaviour : MonoBehaviour
     public GameObject player;
     public AIDestinationSetter destinationSetter;
     public float distanceToPlayer;
+    public EnemyStates enemyState;
 
     public Image healthBar;
     public List<GameObject> targets;
