@@ -621,8 +621,13 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1060669821505004026, guid: 9c41b207b3d02a3418956a80afd16a7e,
         type: 3}
+      propertyPath: dashTime
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060669821505004026, guid: 9c41b207b3d02a3418956a80afd16a7e,
+        type: 3}
       propertyPath: dashForce
-      value: 400
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1060669821505004026, guid: 9c41b207b3d02a3418956a80afd16a7e,
         type: 3}
