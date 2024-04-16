@@ -5560,6 +5560,8 @@ MonoBehaviour:
     rows: 2
     verticalOffset: 62
     horizontalOffset: 63
+    gridSizeVertical: 0
+    gridSizeHorizontal: 0
   gridTile: {fileID: 7771525981320170228, guid: 71cf9b3ee2910aa40b6244ecf724ba80,
     type: 3}
   availablePoints: []
