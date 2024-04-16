@@ -23,7 +23,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Kapelle Boden
-    second: {fileID: 2100000, guid: 78cdf7caa4beb58488bf4d676f791200, type: 2}
+    second: {fileID: 2100000, guid: 71491a86591d0cc499cc20c894c942df, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

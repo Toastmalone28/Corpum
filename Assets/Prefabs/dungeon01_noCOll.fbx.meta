@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Atlas_Bib
-    second: {fileID: 2100000, guid: 528c3b0ffa6482945aea435fbf0901ed, type: 2}
+    second: {fileID: 2100000, guid: 7210eb0f776d09b4496eac03fe2f2d44, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -39,6 +39,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Marble2
     second: {fileID: 2100000, guid: ef3dd02bd49e16947a7de1ec187e12ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #44
+    second: {fileID: 2100000, guid: 3bf77dbed75492c4d8cb78363aad8002, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
