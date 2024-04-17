@@ -3766,7 +3766,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 56638ac34e31298418d908641eaaac77,
         type: 3}
       propertyPath: m_Name
-      value: WallE
+      value: WallO
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 56638ac34e31298418d908641eaaac77,
         type: 3}
