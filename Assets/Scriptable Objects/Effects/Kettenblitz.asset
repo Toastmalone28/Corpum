@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Kettenblitz
   m_EditorClassIdentifier: 
   effectDescription: 
-  coolDown: 5
+  coolDown: 10
   gameManager: {fileID: 0}
   projectile: {fileID: 7709793307561907505, guid: 698f2894a431ea54cb636c7c7ca3de21,
     type: 3}
   barrel: {fileID: 0}
   orientation: {fileID: 0}
-  damage: 20
+  damage: 50
   explosionRadius: 10
   maxTargets: 3
   dischargeTimer: 0.5

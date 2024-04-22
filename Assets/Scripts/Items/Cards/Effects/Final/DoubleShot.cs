@@ -7,6 +7,6 @@ public class DoubleShot : Effect
 {
     public override void Apply()
     {
-        GameObject.FindGameObjectWithTag("Player").GetComponent<GunBehaviour>().SetDoubleShot();
+        GameObject.FindGameObjectWithTag("Player").GetComponent<GunBehaviour>().addMultiShot(1);
     }
 }
