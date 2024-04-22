@@ -16,6 +16,7 @@ public class GunBehaviour : MonoBehaviour
     private WeaponStates weaponState;
     private float reloadTime = 3.3f;
     private float shootTime = 0.5f;
+    private float swordTime = 1.6f;
     private int amountToShoot = 1;
 
     IEnumerator ShotTimer()
@@ -34,6 +35,18 @@ public class GunBehaviour : MonoBehaviour
         float timer = 0f;
 
         while (timer < reloadTime)
+        {
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
+        weaponState = WeaponStates.Ready;
+    }
+    IEnumerator SwordTimer()
+    {
+        float timer = 0f;
+
+        while (timer < swordTime)
         {
             timer += Time.deltaTime;
             yield return null;
@@ -70,6 +83,8 @@ public class GunBehaviour : MonoBehaviour
     private void Swordstrike()
     {
         character.SetTrigger("swordstrike");
+        weaponState = WeaponStates.Swordstrike;
+        StartCoroutine(SwordTimer());
     }
 
     public void Reload()
