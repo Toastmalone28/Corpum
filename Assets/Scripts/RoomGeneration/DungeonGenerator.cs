@@ -18,12 +18,12 @@ public class DungeonGenerator : MonoBehaviour
 
     private void SpawnRooms(IEnumerable<Vector2Int> rooms)
     {
-        RoomController.instance.LoadRoom("01", 0, 0);
+        RoomController.instance.LoadRoom("Start", 0, 0);
 
         //instanciates for every roomLocation an empty room at the position x and y coordinates of the roomLocation
         foreach (Vector2Int roomLocation in rooms) 
         {
-            RoomController.instance.LoadRoom(RoomController.instance.GetRandomRoomName(), roomLocation.x, roomLocation.y);
+            RoomController.instance.LoadRoom(RoomController.instance.GetRandomRoom(), roomLocation.x, roomLocation.y);
         }
         //AstarPath.active.Scan();
     }

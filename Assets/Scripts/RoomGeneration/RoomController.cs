@@ -26,6 +26,8 @@ public class RoomController : MonoBehaviour
 
     Queue<RoomInfo> loadRoomQueue = new Queue<RoomInfo>();
 
+    public List<Scene> possibleRooms = new List<Scene>();
+
     public List<Room> loadedRooms { get; } = new List<Room>();
 
     bool isLoadingRoom = false;
@@ -232,18 +234,9 @@ public class RoomController : MonoBehaviour
         return loadedRooms.Find(item => item.X == x && item.Y == y);
     }
 
-    public string GetRandomRoomName()
+    public string GetRandomRoom()
     {
-        string[] possibleRooms = new string[]
-        {
-            "02",
-            "03",
-            "04",
-            "05",
-
-        };
-
-        return possibleRooms[Random.Range(0, possibleRooms.Length)];
+        return possibleRooms[Random.Range(0, possibleRooms.Count)].name;
     }
 
 }
