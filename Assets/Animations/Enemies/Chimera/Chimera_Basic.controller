@@ -133,8 +133,8 @@ AnimatorController:
   m_Name: Chimera_Basic
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: swipeAttack
-    m_Type: 9
+  - m_Name: swipeAttackRange
+    m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
