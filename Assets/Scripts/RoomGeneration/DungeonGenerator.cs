@@ -7,8 +7,7 @@ public class DungeonGenerator : MonoBehaviour
 {
     public DungeonGenerationData dungeonGenerationData;
     private List<Vector2Int> dungeonRooms;
-    public int maxRooms;
-    public int minRooms;
+
     private void Start()
     {
         //Calls the GenerateDungeon Method using the dungeonGenerationData prefab

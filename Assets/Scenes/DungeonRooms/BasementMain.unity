@@ -1066,6 +1066,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currRoom: {fileID: 0}
+  possibleRooms:
+  - 02
+  - 03
+  - 04
+  - 05
 --- !u!114 &1652753561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1080,8 +1085,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dungeonGenerationData: {fileID: 11400000, guid: fcf7d1f315efeff45a474e72bf1db3e7,
     type: 2}
-  maxRooms: 7
-  minRooms: 5
 --- !u!114 &1652753562
 MonoBehaviour:
   m_ObjectHideFlags: 0

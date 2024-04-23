@@ -26,7 +26,7 @@ public class RoomController : MonoBehaviour
 
     Queue<RoomInfo> loadRoomQueue = new Queue<RoomInfo>();
 
-    public List<Scene> possibleRooms = new List<Scene>();
+    public string[] possibleRooms;
 
     public List<Room> loadedRooms { get; } = new List<Room>();
 
@@ -236,7 +236,7 @@ public class RoomController : MonoBehaviour
 
     public string GetRandomRoom()
     {
-        return possibleRooms[Random.Range(0, possibleRooms.Count)].name;
+        return possibleRooms[Random.Range(0, possibleRooms.Length)];
     }
 
 }
