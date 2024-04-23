@@ -22,11 +22,6 @@ public class EnemyBehaviour : MonoBehaviour
         player = GameObject.FindWithTag("Player");
         healthBar.type = Image.Type.Filled;
     }
-    // Start is called before the first frame update
-    public void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void FixedUpdate()

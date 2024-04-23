@@ -10,7 +10,7 @@ public class ChimeraBehaviour : EnemyBehaviour
     public float swipeCooldown = 4f;
     private bool swipeReady = true;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         destinationSetter = GetComponent<AIDestinationSetter>();
         enemyStats[StatsEnemies.maxHitPoints] = 200f;
@@ -22,16 +22,23 @@ public class ChimeraBehaviour : EnemyBehaviour
     void Update()
     {
         distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
-        if (distanceToPlayer < 5 && swipeReady)
+        Debug.Log(distanceToPlayer);
+        if (distanceToPlayer < 20)
         {
-            chimera.SetTrigger("swipeAttack");
-            swipeReady = false;
+            chimera.SetBool("swipeAttackRange", true);
+            Debug.Log("Attack Range");
+            
             StartCoroutine(SwipeTimer());
+        }
+        if (distanceToPlayer >= 8)
+        {
+            chimera.SetBool("swipeAttackRange", false);
         }
     }
 
     IEnumerator SwipeTimer()
     {
+        swipeReady = false;
         float timer = 0f;
 
         while (timer < swipeCooldown)
