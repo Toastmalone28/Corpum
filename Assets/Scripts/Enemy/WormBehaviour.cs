@@ -5,19 +5,19 @@ using UnityEngine;
 
 public class WormBehaviour : EnemyBehaviour
 {
-    public Animator worm;
 
     // Update is called once per frame
     void Update()
     {
         distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
+        Debug.Log("Worm distance: " + distanceToPlayer);
         if (distanceToPlayer < 5)
         {
-            worm.SetBool("inAttackRange", true);
+            animator.SetBool("inAttackRange", true);
         }
         else
         {
-            worm.SetBool("inAttackRange", false);
+            animator.SetBool("inAttackRange", false);
         }
     }
 }

@@ -12,7 +12,7 @@ public class EnemyBehaviour : MonoBehaviour
     public AIDestinationSetter destinationSetter;
     public float distanceToPlayer;
     public EnemyStates enemyState;
-
+    public Animator animator;
     public Image healthBar;
     public List<GameObject> targets;
     private void Awake()
@@ -21,6 +21,7 @@ public class EnemyBehaviour : MonoBehaviour
         destinationSetter = GetComponent<AIDestinationSetter>();
         player = GameObject.FindWithTag("Player");
         healthBar.type = Image.Type.Filled;
+        animator = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
