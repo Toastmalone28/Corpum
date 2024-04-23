@@ -1487,6 +1487,11 @@ PrefabInstance:
       propertyPath: UIManager
       value: 
       objectReference: {fileID: 545550510}
+    - target: {fileID: 1006731644249470535, guid: d75bb723ef431d146a8b5239ac727f58,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 2711672268107488493, guid: d75bb723ef431d146a8b5239ac727f58,
         type: 3}
       propertyPath: m_Name
