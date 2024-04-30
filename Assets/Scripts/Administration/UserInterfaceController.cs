@@ -8,12 +8,15 @@ public class UserInterfaceController : MonoBehaviour
 {
     public GameObject player;
     private Keybinds keybind;
-
     public GameObject inventoryMenu;
+    public GameObject deathScreen;
+    public static UserInterfaceController instance;
 
-    private void Awake()
+
+    private void Start()
     {
-        keybind = player.GetComponent<PlayerInteraction>().keybinds;
+        instance = GetComponent<UserInterfaceController>();
+        instance.keybind = player.GetComponent<PlayerInteraction>().keybinds;
         GameManager.OnGameStateChanged += GameManagerOnGameStateChanged;
     }
 
@@ -24,7 +27,8 @@ public class UserInterfaceController : MonoBehaviour
 
     private void GameManagerOnGameStateChanged(GameState state)
     {
-        inventoryMenu.SetActive(state == GameState.inventory);
+        instance.inventoryMenu.SetActive(state == GameState.inventory);
+        instance.deathScreen.SetActive(state == GameState.defeat);
     }
 
     private void Update()

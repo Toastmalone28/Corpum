@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class ChimeraBehaviour : EnemyBehaviour
 {
-    public float swipeCooldown = 4f;
+    public float swipeCooldown = 2f;
     private bool swipeReady = true;
 
     // Update is called once per frame
