@@ -25,7 +25,7 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 3
-  m_SubtractiveShadowColor: {r: 0, g: 0, b: 0, a: 1}
+  m_SubtractiveShadowColor: {r: 0.41960785, g: 0.47843137, b: 0.627451, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 5f6cf427d0d6fac4c9ef81214e53029b,
+    type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: d22627ad75b75c248ac55ac23f0db1bc,
     type: 2}
 --- !u!196 &4
@@ -418,6 +419,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 5401671287115465387}
   inventoryMenu: {fileID: 518808355}
+  deathScreen: {fileID: 0}
 --- !u!4 &545550512
 Transform:
   m_ObjectHideFlags: 0
@@ -1377,6 +1379,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4427527181159272499, guid: d75bb723ef431d146a8b5239ac727f58,
+        type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6103727339822244536, guid: d75bb723ef431d146a8b5239ac727f58,
         type: 3}
