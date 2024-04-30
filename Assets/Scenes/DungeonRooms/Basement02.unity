@@ -6038,6 +6038,7 @@ GameObject:
   - component: {fileID: 2046934341}
   - component: {fileID: 2046934342}
   - component: {fileID: 2046934343}
+  - component: {fileID: 2046934344}
   m_Layer: 0
   m_Name: Room
   m_TagString: Untagged
@@ -6110,6 +6111,27 @@ MonoBehaviour:
   - name: Worms
     spawnerData: {fileID: 11400000, guid: e3c0a78fdad1d4d4b996ebae85ddfa6f, type: 2}
   player: {fileID: 0}
+--- !u!65 &2046934344
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046934340}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 69, y: 69, z: 69}
+  m_Center: {x: 35, y: 0, z: 35}
 --- !u!1 &2060074453
 GameObject:
   m_ObjectHideFlags: 0

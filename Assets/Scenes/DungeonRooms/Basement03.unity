@@ -3898,6 +3898,7 @@ GameObject:
   - component: {fileID: 2079415634}
   - component: {fileID: 2079415635}
   - component: {fileID: 2079415636}
+  - component: {fileID: 2079415637}
   m_Layer: 0
   m_Name: penis
   m_TagString: Untagged
@@ -3979,6 +3980,27 @@ MonoBehaviour:
   - name: Worms
     spawnerData: {fileID: 11400000, guid: e3c0a78fdad1d4d4b996ebae85ddfa6f, type: 2}
   player: {fileID: 0}
+--- !u!65 &2079415637
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079415633}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 69, y: 69, z: 69}
+  m_Center: {x: 35, y: 0, z: 35}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

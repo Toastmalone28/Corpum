@@ -732,6 +732,7 @@ GameObject:
   m_Component:
   - component: {fileID: 939151507}
   - component: {fileID: 939151508}
+  - component: {fileID: 939151509}
   m_Layer: 0
   m_Name: pensi
   m_TagString: Untagged
@@ -793,6 +794,27 @@ MonoBehaviour:
   bottomWall: {fileID: 0}
   walls: []
   enemies: []
+--- !u!65 &939151509
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939151506}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 69, y: 69, z: 69}
+  m_Center: {x: 35, y: 0, z: 35}
 --- !u!1001 &1385510307
 PrefabInstance:
   m_ObjectHideFlags: 0
