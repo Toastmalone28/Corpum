@@ -35,6 +35,8 @@ public class RoomController : MonoBehaviour
     bool spawnedItemRoom = false;
     bool updatedRooms = false;
 
+    public static event Action<RoomState> OnRoomStateChanged;
+
     private void Awake()
     {
         instance = this;
@@ -239,4 +241,39 @@ public class RoomController : MonoBehaviour
         return possibleRooms[Random.Range(0, possibleRooms.Length)];
     }
 
+
+    public void UpdateRoomState(Room room, RoomState state)
+    {
+        room.roomState = state;
+
+        switch (state)
+        {
+            case RoomState.combat:
+                HandleCombat();
+                break;
+            case RoomState.inactive:
+                HandleInactive();
+                break;
+            case RoomState.cleared:
+                HandleCleared();
+                break;
+        }
+
+        OnRoomStateChanged?.Invoke(state);
+    }
+
+    private void HandleCleared()
+    {
+        throw new NotImplementedException();
+    }
+
+    private void HandleInactive()
+    {
+        throw new NotImplementedException();
+    }
+
+    private void HandleCombat()
+    {
+        throw new NotImplementedException();
+    }
 }
