@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -98,7 +99,7 @@ public class GameManager : MonoBehaviour
 
     private void HandleDefeat()
     {
-        throw new NotImplementedException();
+        Time.timeScale = 0f;
     }
 
     private void HandleVictory()
