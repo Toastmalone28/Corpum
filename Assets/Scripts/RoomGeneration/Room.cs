@@ -40,6 +40,7 @@ public class Room : MonoBehaviour
     private void Awake()
     {
         RoomController.OnRoomStateChanged += RoomControllerOnRoomStateChanged;
+        EnemyBehaviour.OnEnemyStateChanged += EnemyBehaviourOnEnemyStateChanged;
     }
 
     // Start is called before the first frame update
@@ -213,6 +214,26 @@ public class Room : MonoBehaviour
     }
     private void RoomControllerOnRoomStateChanged(RoomState state)
     {
-
+        if(state == RoomState.combat)
+        {
+            foreach (Door door in doors)
+            {
+                door.gameObject.SetActive(true);
+            }
+        }
+        if(state == RoomState.cleared)
+        {
+            foreach (Door door in doors)
+            {
+                door.gameObject.SetActive(false);
+            }
+        }
+    }
+    private void EnemyBehaviourOnEnemyStateChanged(EnemyStates states)
+    {
+        if(enemies.Count == 0)
+        {
+            RoomController.instance.UpdateRoomState(this, RoomState.cleared);
+        }
     }
 }
