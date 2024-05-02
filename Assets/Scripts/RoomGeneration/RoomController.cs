@@ -274,6 +274,6 @@ public class RoomController : MonoBehaviour
 
     private void HandleCombat()
     {
-        throw new NotImplementedException();
+
     }
 }
