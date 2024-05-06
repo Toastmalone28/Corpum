@@ -66,7 +66,7 @@ public class GunBehaviour : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && GameManager.instance.gunStats[StatsGun.clipCapacity] > 0 && weaponState == WeaponStates.Ready)
         {
-            Shoot();
+            StartCoroutine(Shoot());
         }
 
         if (Input.GetKeyDown(KeyCode.R) && weaponState == WeaponStates.Ready && GameManager.instance.gunStats[StatsGun.clipCapacity] < 10) 
@@ -94,28 +94,18 @@ public class GunBehaviour : MonoBehaviour
         weaponState = WeaponStates.Reload;
         StartCoroutine(ReloadTimer());
     }
-    public void Shoot()
+    public IEnumerator Shoot()
     {
         for (int i = 0; i < amountToShoot; i++)
         {
-            GameObject.Instantiate(projectile, barrel.position, orientation.transform.rotation);
-            StartCoroutine(Wait(0.1f));
+            Instantiate(projectile, barrel.position, orientation.transform.rotation);
+            yield return new WaitForSeconds(0.1f);
         }
         character.SetTrigger("shoot");
         //?
         GameManager.instance.gunStats[StatsGun.clipCapacity]--;
         weaponState = WeaponStates.Shooting;
         StartCoroutine(ShotTimer());
-    }
-    public IEnumerator Wait (float delay)
-    {
-        float timer = 0f;
-
-        while (timer < delay)
-        {
-            timer += Time.deltaTime;
-            yield return null;
-        }
     }
 
     public void addMultiShot(int amount)
