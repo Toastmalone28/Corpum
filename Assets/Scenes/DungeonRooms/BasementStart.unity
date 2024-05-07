@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 4a9357b497139c54a8cf055bf8478c06,
+  m_LightingDataAsset: {fileID: 112000002, guid: 5f6cf427d0d6fac4c9ef81214e53029b,
     type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: d22627ad75b75c248ac55ac23f0db1bc,
     type: 2}
@@ -9441,6 +9441,7 @@ MonoBehaviour:
   bottomWall: {fileID: 0}
   walls: []
   enemies: []
+  roomState: 0
 --- !u!65 &1856270901
 BoxCollider:
   m_ObjectHideFlags: 0
