@@ -7082,6 +7082,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chimera
       objectReference: {fileID: 0}
+    - target: {fileID: 599758709111796017, guid: f9442e5d9dd516946a2087f5c79545af,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1330402077789900875, guid: f9442e5d9dd516946a2087f5c79545af,
+        type: 3}
+      propertyPath: m_TagString
+      value: BossHead
+      objectReference: {fileID: 0}
     - target: {fileID: 6145802823575334631, guid: f9442e5d9dd516946a2087f5c79545af,
         type: 3}
       propertyPath: healthBar

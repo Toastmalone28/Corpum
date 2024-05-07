@@ -13,12 +13,15 @@ public class ChimeraBehaviour : EnemyBehaviour
     public float shootCooldown = 2f;
     private bool attackReady = true;
     public BossProjectile proj;
+    private GameObject head;
+
 
     void Update()
     {
+        if (head == null)
+            head = GameObject.FindWithTag("BossHead");
+
         distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
-        Debug.Log(distanceToPlayer);
-        Debug.Log(attackReady);
         if (distanceToPlayer < 6 && attackReady)
         {
             animator.SetTrigger("swipeAttack");
@@ -52,7 +55,8 @@ public class ChimeraBehaviour : EnemyBehaviour
             timer += Time.deltaTime;
             yield return null;
         }
-        GameObject.Instantiate(proj);
+        Debug.Log("SHOOOOOT");
+        Instantiate(proj.bullet, head.transform.position + player.transform.position / 10, Quaternion.LookRotation(Vector3.RotateTowards(transform.position, player.transform.position, 60f, 1f)), head.transform);
         attackReady = true;
     }
 
