@@ -7,7 +7,6 @@ public class BossProjectile : ScriptableObject
 {
     
     public GameObject bullet;
-    public float speed = 45;
     public float lifeTime = 2;
     public float impulse = 500f;
 
