@@ -15,6 +15,8 @@ public class EnemyBehaviour : MonoBehaviour
     public Animator animator;
     public Image healthBar;
     public List<GameObject> targets;
+
+    public static event System.Action<EnemyStates> OnEnemyStateChanged;
     private void Awake()
     {
         InitializeEnemyStats();
@@ -69,6 +71,7 @@ public class EnemyBehaviour : MonoBehaviour
         healthBar.GetComponentsInChildren<Image>()[1].fillAmount = enemyStats[StatsEnemies.hitPoints] / 100f;
         if (enemyStats[StatsEnemies.hitPoints] <= 0)
         {
+            UpdateEnemyState(EnemyStates.dying);
             Destroy(gameObject);
         }
     }
@@ -91,5 +94,45 @@ public class EnemyBehaviour : MonoBehaviour
         enemyStats[StatsEnemies.maxHitPoints] *= value;
 
         transform.localScale *= value;
+    }
+    public void UpdateEnemyState(EnemyStates state)
+    {
+        enemyState = state;
+
+        switch (state)
+        {
+            case EnemyStates.spawning:
+                HandleSpawning();
+                break;
+            case EnemyStates.active:
+                HandleActive();
+                break;
+            case EnemyStates.inactive:
+                HandleInactive();
+                break;
+            case EnemyStates.dying:
+                HandleDying();
+                break;
+        }
+
+        OnEnemyStateChanged?.Invoke(state);
+    }
+    private void HandleSpawning()
+    {
+        throw new System.NotImplementedException();
+    }
+    private void HandleActive()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    private void HandleInactive()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    private void HandleDying()
+    {
+        GetComponentInParent<Room>().enemies.Remove(this);
     }
 }

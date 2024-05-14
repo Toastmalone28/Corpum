@@ -14,6 +14,8 @@ TagManager:
   - AbilityTrigger
   - Image
   - Text
+  - DeathScreen
+  - BossHead
   layers:
   - Default
   - TransparentFX
