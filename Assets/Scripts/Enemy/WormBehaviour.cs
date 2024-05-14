@@ -10,7 +10,6 @@ public class WormBehaviour : EnemyBehaviour
     void Update()
     {
         distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
-        Debug.Log("Worm distance: " + distanceToPlayer);
         if (distanceToPlayer < 5)
         {
             animator.SetBool("inAttackRange", true);
