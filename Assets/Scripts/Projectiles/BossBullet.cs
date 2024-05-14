@@ -5,7 +5,7 @@ using UnityEngine;
 public class BossBullet : MonoBehaviour
 {
     public float lifeTime = 2;
-    public float impulse = 10f;
+    public float impulse = 3f;
     public GameObject player;
 
     // Start is called before the first frame update
@@ -16,14 +16,8 @@ public class BossBullet : MonoBehaviour
         rb.AddForce(((player.transform.position - transform.position).normalized) * impulse, ForceMode.Impulse);
         Destroy(gameObject, lifeTime);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //transform.Translate(speed * Time.deltaTime * Vector3.forward, Space.Self);
-    }
     private void OnCollisionEnter(Collision collision)
     {
-        //Destroy(gameObject);
+        Destroy(gameObject);
     }
 }

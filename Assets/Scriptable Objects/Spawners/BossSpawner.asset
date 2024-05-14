@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85980c1802e6c584680ca34ef5edf4b4, type: 3}
   m_Name: BossSpawner
   m_EditorClassIdentifier: 
-  itemToSpawn: {fileID: 5188039851036797382, guid: 53548c287862d62448a745c8136808f0,
+  itemToSpawn: {fileID: 2460706119687418582, guid: af7ff67d40c787d4b867ff11e57463e6,
     type: 3}
   minSpawn: 1
   maxSpawn: 1
