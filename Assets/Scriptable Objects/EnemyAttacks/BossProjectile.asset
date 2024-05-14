@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41cf3fbd91d903e46a9635c95ee9a51a, type: 3}
   m_Name: BossProjectile
   m_EditorClassIdentifier: 
-  bullet: {fileID: 7008365148597308116, guid: cc7244db78713404bb73ee60468f0095, type: 3}
+  bullet: {fileID: 7008365148597308116, guid: c17b32eecee4b07469964fb16f14ce55, type: 3}
   speed: 45
   lifeTime: 2
   impulse: 500
