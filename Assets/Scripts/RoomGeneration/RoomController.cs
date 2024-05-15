@@ -35,6 +35,12 @@ public class RoomController : MonoBehaviour
     bool spawnedItemRoom = false;
     bool updatedRooms = false;
 
+    public bool UpdatedRooms
+    {
+        get { return updatedRooms; }
+        private set { updatedRooms = value; }
+    }
+
     public static event Action<RoomState> OnRoomStateChanged;
 
     private void Awake()
