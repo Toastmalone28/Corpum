@@ -16,6 +16,7 @@ TagManager:
   - Text
   - DeathScreen
   - BossHead
+  - BossBullet
   layers:
   - Default
   - TransparentFX
