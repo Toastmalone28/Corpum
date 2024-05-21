@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b0b8f771f39936049a5ed837fdc93a55
+guid: a1e8e1a046057744c96933238ceedcf9
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: atlas_Dungeon
-    second: {fileID: 2100000, guid: 17bf361b1dde1e447a96f3b03b917670, type: 2}
+      name: Material #26
+    second: {fileID: 2100000, guid: 83d2753f007b4f0459d1e7ee493a2937, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Schmied
+    second: {fileID: 2100000, guid: 83d2753f007b4f0459d1e7ee493a2937, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -53,7 +58,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1

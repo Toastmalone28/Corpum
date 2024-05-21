@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.23584908, g: 0.23584908, b: 0.23584908, a: 1}
+  m_AmbientSkyColor: {r: 0.4433962, g: 0.43670344, b: 0.43670344, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -419,7 +419,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 5401671287115465387}
   inventoryMenu: {fileID: 518808355}
-  deathScreen: {fileID: 0}
   loadingScreen: {fileID: 1231850249}
 --- !u!4 &545550512
 Transform:
