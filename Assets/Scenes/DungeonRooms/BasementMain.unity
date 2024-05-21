@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
+  m_AmbientSkyColor: {r: 0.23584908, g: 0.23584908, b: 0.23584908, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -1071,6 +1071,9 @@ MonoBehaviour:
   currRoom: {fileID: 0}
   possibleRooms:
   - 02
+  - 03
+  - 04
+  - 05
 --- !u!114 &1652753561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1370,12 +1373,12 @@ PrefabInstance:
     - target: {fileID: 1006731644249470535, guid: d75bb723ef431d146a8b5239ac727f58,
         type: 3}
       propertyPath: m_Range
-      value: 15
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1006731644249470535, guid: d75bb723ef431d146a8b5239ac727f58,
         type: 3}
       propertyPath: m_Intensity
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2219692683695472617, guid: d75bb723ef431d146a8b5239ac727f58,
         type: 3}
