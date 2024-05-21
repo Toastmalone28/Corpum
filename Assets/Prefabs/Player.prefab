@@ -1014,6 +1014,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 3115127366031050522, guid: 856da0be5f3dce845b4e2a3f41234cda,
+        type: 3}
+      propertyPath: m_TagString
+      value: PlayerSword
+      objectReference: {fileID: 0}
     - target: {fileID: 3185083369777896510, guid: 856da0be5f3dce845b4e2a3f41234cda,
         type: 3}
       propertyPath: m_Layer

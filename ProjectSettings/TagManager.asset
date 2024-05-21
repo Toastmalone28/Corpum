@@ -17,6 +17,7 @@ TagManager:
   - DeathScreen
   - BossHead
   - BossBullet
+  - PlayerSword
   layers:
   - Default
   - TransparentFX

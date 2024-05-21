@@ -7135,6 +7135,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 505064276939488977, guid: 6f33ae35152f38749b08aa3dc33d38ad,
+        type: 3}
+      propertyPath: m_TagString
+      value: PlayerSword
+      objectReference: {fileID: 0}
     - target: {fileID: 569772026186813912, guid: 6f33ae35152f38749b08aa3dc33d38ad,
         type: 3}
       propertyPath: sensX
