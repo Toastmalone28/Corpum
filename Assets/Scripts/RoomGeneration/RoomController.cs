@@ -88,8 +88,8 @@ public class RoomController : MonoBehaviour
                 }
                 UpdateRooms();
                 updatedRooms = true;
-                Debug.Log("gaming");
                 AstarPath.active.Scan();
+                GameManager.instance.UpdateGameState(GameState.running);
             }
             return;
         }
@@ -154,6 +154,8 @@ public class RoomController : MonoBehaviour
 
         while(!loadRoom.isDone)
         {
+            if (!updatedRooms)
+                GameManager.instance.UpdateGameState(GameState.loading);
             yield return null;
         }
     }
@@ -270,7 +272,7 @@ public class RoomController : MonoBehaviour
 
     private void HandleCleared()
     {
-        throw new NotImplementedException();
+        Debug.Log("Room cleared");
     }
 
     private void HandleInactive()
@@ -280,6 +282,6 @@ public class RoomController : MonoBehaviour
 
     private void HandleCombat()
     {
-
+        Debug.Log("Combat started");
     }
 }

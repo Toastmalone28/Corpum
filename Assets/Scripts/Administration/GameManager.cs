@@ -125,7 +125,7 @@ public class GameManager : MonoBehaviour
 
     private void HandleLoading()
     {
-        throw new NotImplementedException();
+        Debug.Log("Loading...");
     }
 
     private void HandleMenu()
