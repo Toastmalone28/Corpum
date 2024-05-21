@@ -59,6 +59,11 @@ public class EnemyBehaviour : MonoBehaviour
         {
             DealDamage(GameManager.instance.gunStats[StatsGun.damage]);
         }
+
+        if (collision.gameObject.CompareTag("PlayerSword"))
+        {
+            DealDamage(GameManager.instance.gunStats[StatsGun.swordDamage]);
+        }
     }
     public void changeHealthVisibility()
     {
@@ -74,6 +79,7 @@ public class EnemyBehaviour : MonoBehaviour
             UpdateEnemyState(EnemyStates.dying);
             Destroy(gameObject);
         }
+        Debug.Log(StatsEnemies.hitPoints);
     }
     public GameObject GetAbilityTrigger()
     {

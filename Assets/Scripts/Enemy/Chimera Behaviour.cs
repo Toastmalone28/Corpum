@@ -55,7 +55,6 @@ public class ChimeraBehaviour : EnemyBehaviour
             timer += Time.deltaTime;
             yield return null;
         }
-        Debug.Log("SHOOOOOT");
         Instantiate(proj.bullet, head.transform.position, Quaternion.LookRotation(Vector3.RotateTowards(transform.position, player.transform.position, 1f, 1f)), head.transform);
         attackReady = true;
     }

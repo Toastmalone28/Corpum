@@ -48,6 +48,7 @@ public class GameManager : MonoBehaviour
         gunStats.Add(StatsGun.damage, 15f);
         gunStats.Add(StatsGun.critChance, 5f);
         gunStats.Add(StatsGun.critDamage, 20f);
+        gunStats.Add(StatsGun.swordDamage, 25f);
     }
     public void UpdateGameState(GameState state)
     {

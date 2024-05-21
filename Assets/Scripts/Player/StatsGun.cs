@@ -9,5 +9,6 @@ public enum StatsGun
     //reloadSpeed,
     damage,
     critChance,
-    critDamage
+    critDamage,
+    swordDamage
 }
