@@ -8,12 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Floor3
-    second: {fileID: 2100000, guid: 3a3c0064867777149ae2b4b931f82e25, type: 2}
+    second: {fileID: 2100000, guid: b3e9173364f073c42abefe2863332fcb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: steinbrick01
-    second: {fileID: 2100000, guid: acfc7624a5ab1f945a95a830691f575d, type: 2}
+    second: {fileID: 2100000, guid: 85b1f151d56c6ed4aae72e9da1c4e2e4, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

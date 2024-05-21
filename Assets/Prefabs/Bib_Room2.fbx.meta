@@ -8,32 +8,32 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: BibliothekAtlas
-    second: {fileID: 2100000, guid: a87574130a57b474682a1a791282fe00, type: 2}
+    second: {fileID: 2100000, guid: 49d8433af09a7664b81789cf4de2b8d8, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: BibliothekFloor
-    second: {fileID: 2100000, guid: 3bf77dbed75492c4d8cb78363aad8002, type: 2}
+    second: {fileID: 2100000, guid: ce9aa6219c30df74e987fd6e10885535, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: BibliothekWood1
-    second: {fileID: 2100000, guid: f28a584bf18a2244d917e96bcd59868b, type: 2}
+    second: {fileID: 2100000, guid: df197941921f4df4f83235720c186056, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: BibliothekWood2
-    second: {fileID: 2100000, guid: 2f5deff646e033941a18066e4e1a4ed8, type: 2}
+    second: {fileID: 2100000, guid: 11cc5db13a3fbbd4cbfcd3ed6e1ff30c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: BibliothekWood3
-    second: {fileID: 2100000, guid: 544e3eb440377c1458a72e33ebcde07e, type: 2}
+    second: {fileID: 2100000, guid: a121687dc5936914caf63973762c6584, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: KapelleObjects_Atlas
-    second: {fileID: 2100000, guid: f4a6ca785a0e879489cd240ae20157e8, type: 2}
+    second: {fileID: 2100000, guid: efc437b3a28ef2d45bcb222f4c0a4018, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
