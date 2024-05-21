@@ -21,8 +21,9 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: M_Dungeon_Floor
-  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-  m_Parent: {fileID: 2100000, guid: 651e97252e90d8246ab05420991eab16, type: 2}
+  m_Shader: {fileID: -6465566751694194690, guid: 9811a975b6d99df45b93bb716dacc497,
+    type: 3}
+  m_Parent: {fileID: 2100000, guid: f5cd972496b10fc44962df0372e3a51a, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -30,13 +31,16 @@ Material:
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap:
-    RenderType: Opaque
+  stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_4450AB74:
+        m_Texture: {fileID: 2800000, guid: b53c6298229af514baf80a50d85708c9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BaseMap:
         m_Texture: {fileID: 2800000, guid: abf821b19fdc8cd4bbd3325b21836c4e, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -47,6 +51,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - Boolean_193028D2: 1
+    - Boolean_3F1A8DAB: 1
+    - Vector1_6F288C5B: 0.35
+    - Vector1_B2CC132F: 32
+    - Vector1_B9994903: 2.45
+    - Vector1_E8746023: 35
     - _Smoothness: 0
-    m_Colors: []
+    - _rough: 0
+    m_Colors:
+    - Color_2E5415DE: {r: 0.4056604, g: 0.28912202, b: 0.23918656, a: 0}
   m_BuildTextureStacks: []
