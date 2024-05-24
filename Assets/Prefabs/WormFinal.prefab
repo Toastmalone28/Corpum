@@ -679,7 +679,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2525885169056353882, guid: ada50b206e3350044987228d35caba4f, type: 3}
+  - {fileID: 2100000, guid: bdcfaaeb346f8ce4499e90aaaeae7a3a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2911,13 +2911,14 @@ MonoBehaviour:
   player: {fileID: 0}
   destinationSetter: {fileID: 0}
   distanceToPlayer: 0
+  enemyState: 0
+  animator: {fileID: 0}
   healthBar: {fileID: 1029488008050887749}
   targets:
   - {fileID: 7636262895952530926}
   - {fileID: 4614751811667179777}
   - {fileID: 295386595904088052}
   - {fileID: 6897808957424425168}
-  worm: {fileID: 0}
 --- !u!1 &7940500305044788733
 GameObject:
   m_ObjectHideFlags: 0

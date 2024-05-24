@@ -1446,6 +1446,11 @@ PrefabInstance:
       propertyPath: UIManager
       value: 
       objectReference: {fileID: 545550510}
+    - target: {fileID: 832423139686017513, guid: d75bb723ef431d146a8b5239ac727f58,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e7adffabb507fc540a73a2845762413c, type: 2}
     - target: {fileID: 1006731644249470535, guid: d75bb723ef431d146a8b5239ac727f58,
         type: 3}
       propertyPath: m_Range
@@ -1471,6 +1476,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3822713252302443527, guid: d75bb723ef431d146a8b5239ac727f58,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 17a7f3e76416f754a93de9a8e28c3133, type: 2}
     - target: {fileID: 4427527181159272499, guid: d75bb723ef431d146a8b5239ac727f58,
         type: 3}
       propertyPath: m_Antialiasing
