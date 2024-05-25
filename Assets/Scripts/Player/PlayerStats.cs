@@ -30,6 +30,7 @@ public class PlayerStats : MonoBehaviour
         if (GameManager.instance.playerStats[StatsPlayer.hitPoints] <= 0)
         {
             GameManager.instance.UpdateGameState(GameState.defeat);
+
         }
         //Add event for health changes!!!
         healthbar.fillAmount = GameManager.instance.playerStats[StatsPlayer.hitPoints] / 100f;
