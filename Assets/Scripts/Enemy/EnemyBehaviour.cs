@@ -100,7 +100,6 @@ public class EnemyBehaviour : MonoBehaviour
         if (enemyStats[StatsEnemies.hitPoints] <= 0)
         {
             UpdateEnemyState(EnemyStates.dying);
-            Destroy(gameObject);
         }
         Debug.Log(StatsEnemies.hitPoints);
     }
@@ -163,5 +162,6 @@ public class EnemyBehaviour : MonoBehaviour
     private void HandleDying()
     {
         GetComponentInParent<Room>().enemies.Remove(this);
+        Destroy(gameObject);
     }
 }
