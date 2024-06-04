@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000012, guid: 5f6cf427d0d6fac4c9ef81214e53029b,
+  m_LightingDataAsset: {fileID: 112000014, guid: 5f6cf427d0d6fac4c9ef81214e53029b,
     type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
@@ -202,6 +202,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KerzeL_Mesh
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 92878d5144ca21f42b3787cbf0caf918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -291,6 +296,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Steinhaufen_Klein
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 40f5c816a3d8067428390cbbbcdbead7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -364,6 +374,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall_Dung_broken03
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e1018fc9d6c08794bbbd5b98395dde01,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -444,6 +459,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlasflascheBraun_Mesh (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0248a1e5ee9b7a545b16be521513ffec,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -518,6 +538,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Schrift_Mesh (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 38547a04fc5907c49a643fc2816871bd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -591,6 +616,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Schrift_Mesh (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 38547a04fc5907c49a643fc2816871bd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -681,6 +711,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlasflascheGruen_Mesh (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cd2c18a830e711e4d8018e2c45b1ff38,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -754,6 +789,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall_Dung_Window
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8feb2033b8b65bf4a8f90becab7ba6f1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -844,6 +884,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlasflascheGruen_Mesh (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cd2c18a830e711e4d8018e2c45b1ff38,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -918,6 +963,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Schrift_Mesh (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 38547a04fc5907c49a643fc2816871bd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -991,6 +1041,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Schrift2_Mesh (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0f3c19ed43cb09b4ca195dfa1ab77009,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1101,7 +1156,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 6e-45, z: 2.90591e-40, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -1219,7 +1274,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 6e-45, z: 2.86018e-40, w: 3.6883192e-26}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -1373,7 +1428,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 1.1e-44, z: 4.6185e-41, w: 1.5057348e-36}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -1471,6 +1526,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Steinhaufen_Klein (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 40f5c816a3d8067428390cbbbcdbead7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1545,6 +1605,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Dung_half
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e83760719467813458b5da2041624f33,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1618,6 +1683,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall S
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13db4e8ac431b3b4f8592c457f598acb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1726,6 +1796,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KerzeM_Mesh (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6e5303b7d00732443b92cb1eaae6706e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1799,6 +1874,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Schrift2_Mesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0f3c19ed43cb09b4ca195dfa1ab77009,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1888,6 +1968,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KerzeL_Mesh (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 92878d5144ca21f42b3787cbf0caf918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4141,10 +4226,35 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1071229039}
     m_Modifications:
+    - target: {fileID: 26771323329804156, guid: efa2371ca1e19f949ac356e59353821b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1295621062873698749, guid: efa2371ca1e19f949ac356e59353821b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3139324247801006077, guid: efa2371ca1e19f949ac356e59353821b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3681674213300367653, guid: efa2371ca1e19f949ac356e59353821b,
         type: 3}
       propertyPath: m_Name
       value: FogWall S
+      objectReference: {fileID: 0}
+    - target: {fileID: 3681674213300367653, guid: efa2371ca1e19f949ac356e59353821b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3949037931237770492, guid: efa2371ca1e19f949ac356e59353821b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4939028733800020626, guid: efa2371ca1e19f949ac356e59353821b,
         type: 3}
@@ -4194,6 +4304,11 @@ PrefabInstance:
     - target: {fileID: 4939028733800020626, guid: efa2371ca1e19f949ac356e59353821b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8404087213865205608, guid: efa2371ca1e19f949ac356e59353821b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4292,6 +4407,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall O
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13db4e8ac431b3b4f8592c457f598acb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4395,6 +4515,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlasflascheGruen_Mesh
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cd2c18a830e711e4d8018e2c45b1ff38,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4484,6 +4609,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stein_Mesh (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e6e48da11ae710b46a500bcbcdac97e4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4558,6 +4688,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Schrift2_Mesh (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0f3c19ed43cb09b4ca195dfa1ab77009,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4577,10 +4712,35 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1071229039}
     m_Modifications:
+    - target: {fileID: 26771323329804156, guid: efa2371ca1e19f949ac356e59353821b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1295621062873698749, guid: efa2371ca1e19f949ac356e59353821b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3139324247801006077, guid: efa2371ca1e19f949ac356e59353821b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3681674213300367653, guid: efa2371ca1e19f949ac356e59353821b,
         type: 3}
       propertyPath: m_Name
       value: FogWall O
+      objectReference: {fileID: 0}
+    - target: {fileID: 3681674213300367653, guid: efa2371ca1e19f949ac356e59353821b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3949037931237770492, guid: efa2371ca1e19f949ac356e59353821b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4939028733800020626, guid: efa2371ca1e19f949ac356e59353821b,
         type: 3}
@@ -4630,6 +4790,11 @@ PrefabInstance:
     - target: {fileID: 4939028733800020626, guid: efa2371ca1e19f949ac356e59353821b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8404087213865205608, guid: efa2371ca1e19f949ac356e59353821b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4703,6 +4868,7 @@ Transform:
   - {fileID: 750794051}
   - {fileID: 1472170968}
   - {fileID: 2106541862}
+  - {fileID: 1187534962}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &872140144
@@ -4834,6 +5000,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlasflascheBraun_Mesh (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0248a1e5ee9b7a545b16be521513ffec,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4918,6 +5089,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlasflascheGruen_Mesh (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cd2c18a830e711e4d8018e2c45b1ff38,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4991,6 +5167,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Schrift2_Mesh (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0f3c19ed43cb09b4ca195dfa1ab77009,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5101,7 +5282,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 1.5e-44, z: 1.20289e-40, w: NaN}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -5184,6 +5365,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Schrift_Mesh (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 38547a04fc5907c49a643fc2816871bd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5257,6 +5443,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall N
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13db4e8ac431b3b4f8592c457f598acb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5415,6 +5606,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlasflascheGruen_Mesh (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cd2c18a830e711e4d8018e2c45b1ff38,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5524,7 +5720,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 1.1e-44, z: 3.24531e-40, w: 3.6665466e-26}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -5621,6 +5817,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Steinhaufen_Klein (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 40f5c816a3d8067428390cbbbcdbead7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5731,7 +5932,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 7e-45, z: 4.8045e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -5813,6 +6014,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Schrift2_Mesh (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0f3c19ed43cb09b4ca195dfa1ab77009,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5903,6 +6109,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Steinhaufen_Gro\xDF (1)"
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1a744c5417c4df74bbe2d5063267f587,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5976,6 +6187,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Schrift2_Mesh (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0f3c19ed43cb09b4ca195dfa1ab77009,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6086,6 +6302,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Dung_Window (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8feb2033b8b65bf4a8f90becab7ba6f1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6105,10 +6326,35 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1071229039}
     m_Modifications:
+    - target: {fileID: 26771323329804156, guid: efa2371ca1e19f949ac356e59353821b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1295621062873698749, guid: efa2371ca1e19f949ac356e59353821b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3139324247801006077, guid: efa2371ca1e19f949ac356e59353821b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3681674213300367653, guid: efa2371ca1e19f949ac356e59353821b,
         type: 3}
       propertyPath: m_Name
       value: FogWall N
+      objectReference: {fileID: 0}
+    - target: {fileID: 3681674213300367653, guid: efa2371ca1e19f949ac356e59353821b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3949037931237770492, guid: efa2371ca1e19f949ac356e59353821b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4939028733800020626, guid: efa2371ca1e19f949ac356e59353821b,
         type: 3}
@@ -6158,6 +6404,11 @@ PrefabInstance:
     - target: {fileID: 4939028733800020626, guid: efa2371ca1e19f949ac356e59353821b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8404087213865205608, guid: efa2371ca1e19f949ac356e59353821b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6257,6 +6508,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Schrift2_Mesh (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0f3c19ed43cb09b4ca195dfa1ab77009,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6331,6 +6587,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Schrift2_Mesh (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0f3c19ed43cb09b4ca195dfa1ab77009,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6388,7 +6649,7 @@ Transform:
   - {fileID: 1635514226}
   - {fileID: 1571066807}
   - {fileID: 1672420946}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 872140143}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1237686073
 PrefabInstance:
@@ -6467,6 +6728,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Steinhaufen_Klein (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 40f5c816a3d8067428390cbbbcdbead7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6547,6 +6813,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlasflascheBraun_Mesh
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0248a1e5ee9b7a545b16be521513ffec,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6620,6 +6891,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Schrift2_Mesh (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0f3c19ed43cb09b4ca195dfa1ab77009,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6695,6 +6971,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Schrift2_Mesh (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0f3c19ed43cb09b4ca195dfa1ab77009,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6714,10 +6995,35 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1071229039}
     m_Modifications:
+    - target: {fileID: 26771323329804156, guid: efa2371ca1e19f949ac356e59353821b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1295621062873698749, guid: efa2371ca1e19f949ac356e59353821b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3139324247801006077, guid: efa2371ca1e19f949ac356e59353821b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3681674213300367653, guid: efa2371ca1e19f949ac356e59353821b,
         type: 3}
       propertyPath: m_Name
       value: FogWall W
+      objectReference: {fileID: 0}
+    - target: {fileID: 3681674213300367653, guid: efa2371ca1e19f949ac356e59353821b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3949037931237770492, guid: efa2371ca1e19f949ac356e59353821b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4939028733800020626, guid: efa2371ca1e19f949ac356e59353821b,
         type: 3}
@@ -6767,6 +7073,11 @@ PrefabInstance:
     - target: {fileID: 4939028733800020626, guid: efa2371ca1e19f949ac356e59353821b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8404087213865205608, guid: efa2371ca1e19f949ac356e59353821b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7028,6 +7339,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Steinhaufen_Gro\xDF"
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1a744c5417c4df74bbe2d5063267f587,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7116,6 +7432,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlasflascheGruen_Mesh (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cd2c18a830e711e4d8018e2c45b1ff38,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7226,7 +7547,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 5.9594724e-29}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -7308,6 +7629,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Schrift_Mesh (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 38547a04fc5907c49a643fc2816871bd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7418,7 +7744,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -7501,6 +7827,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Schrift2_Mesh (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0f3c19ed43cb09b4ca195dfa1ab77009,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7574,6 +7905,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall_Dung_broken_Window
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f3419b21cd0f8cc468294862f460ab59,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7770,6 +8106,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate01
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9cf857b3503c59e4dbfd91d63c0044d4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7854,6 +8195,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KerzeM_Mesh
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6e5303b7d00732443b92cb1eaae6706e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7917,8 +8263,8 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.28882167, g: 0.31182712, b: 0.3584906, a: 1}
-  m_Intensity: 600
+  m_Color: {r: 0.5686275, g: 0.6117647, b: 0.7058824, a: 1}
+  m_Intensity: 700
   m_Range: 32.885662
   m_SpotAngle: 179
   m_InnerSpotAngle: 130.33075
@@ -7963,7 +8309,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 17031
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 2.1e-44, z: 1.49433e-40, w: 0}
+  m_BoundingSphereOverride: {x: 2.2e-44, y: 2.4405384e-30, z: 9.1858e-41, w: 4.591775e-39}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -8061,6 +8407,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlasflascheGruen_Mesh (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cd2c18a830e711e4d8018e2c45b1ff38,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8149,6 +8500,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stein_Mesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e6e48da11ae710b46a500bcbcdac97e4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8259,7 +8615,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 1e-45}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -8377,7 +8733,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1.5e-44, y: 3.26084e-40, z: 1.010207e-39, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -8460,6 +8816,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrateContent
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 71f636c3a8b3fe149a5db73ada216dee,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8523,8 +8884,8 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.28882167, g: 0.31182712, b: 0.3584906, a: 1}
-  m_Intensity: 600
+  m_Color: {r: 0.5686275, g: 0.6117647, b: 0.7058824, a: 1}
+  m_Intensity: 700
   m_Range: 32.885662
   m_SpotAngle: 179
   m_InnerSpotAngle: 130.33075
@@ -8569,7 +8930,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 17031
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 2.1e-44, z: 1.49433e-40, w: 0}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 1.5e-44, z: 1.76394e-40, w: 3.1855652e-29}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -8652,6 +9013,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Schrift_Mesh
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 38547a04fc5907c49a643fc2816871bd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8726,6 +9092,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Schriftrolle_Mesh (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9f6c25d451144914aaf8b8fb4aac926a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8789,8 +9160,8 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.28882167, g: 0.31182712, b: 0.3584906, a: 1}
-  m_Intensity: 600
+  m_Color: {r: 0.5686275, g: 0.6117647, b: 0.7058824, a: 1}
+  m_Intensity: 700
   m_Range: 32.885662
   m_SpotAngle: 179
   m_InnerSpotAngle: 130.33075
@@ -8835,7 +9206,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 17031
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 2.1e-44, z: 1.49433e-40, w: 0}
+  m_BoundingSphereOverride: {x: 7.51e-43, y: -2.527763e-18, z: 7.5e-43, w: 2.7837856e-25}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -8917,6 +9288,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Schriftrolle_Mesh (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9f6c25d451144914aaf8b8fb4aac926a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9007,6 +9383,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Steinhaufen_Gro\xDF (3)"
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1a744c5417c4df74bbe2d5063267f587,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9096,6 +9477,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Steinhaufen_Gro\xDF (2)"
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1a744c5417c4df74bbe2d5063267f587,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9169,6 +9555,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Schrift2_Mesh (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0f3c19ed43cb09b4ca195dfa1ab77009,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9244,6 +9635,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Schrift2_Mesh (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0f3c19ed43cb09b4ca195dfa1ab77009,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9317,6 +9713,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Schrift2_Mesh (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0f3c19ed43cb09b4ca195dfa1ab77009,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9427,7 +9828,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 2e-44, z: 7.3422e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -9510,6 +9911,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Schrift_Mesh (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 38547a04fc5907c49a643fc2816871bd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9583,6 +9989,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Schrift_Mesh (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 38547a04fc5907c49a643fc2816871bd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9658,6 +10069,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Schriftrolle_Mesh
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9f6c25d451144914aaf8b8fb4aac926a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9721,8 +10137,8 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.28882167, g: 0.31182712, b: 0.3584906, a: 1}
-  m_Intensity: 600
+  m_Color: {r: 0.5686275, g: 0.6117647, b: 0.7058824, a: 1}
+  m_Intensity: 700
   m_Range: 32.885662
   m_SpotAngle: 179
   m_InnerSpotAngle: 130.33075
@@ -9767,7 +10183,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 17031
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 2.1e-44, z: 1.49433e-40, w: 0}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 3.8e-44, z: 6.9434e-41, w: 1}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -9885,7 +10301,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1.5551434e+31, y: 893.7031, z: 2.8572842e+32, w: 6.2115285e+22}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -9967,6 +10383,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Schriftrolle_Mesh (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9f6c25d451144914aaf8b8fb4aac926a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10077,7 +10498,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1.5551434e+31, y: 893.7031, z: 2.8572842e+32, w: 6.2115285e+22}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -10187,4 +10608,3 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 872140143}
-  - {fileID: 1187534962}

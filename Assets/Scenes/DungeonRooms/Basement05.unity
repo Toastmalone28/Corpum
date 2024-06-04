@@ -222,7 +222,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1.5551434e+31, y: 893.7031, z: 2.8572842e+32, w: 6.2115285e+22}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -340,6 +340,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Dung_default (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13db4e8ac431b3b4f8592c457f598acb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -420,6 +425,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Dung01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ea65cca5b04c116489b4fb3af67678db,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -494,6 +504,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Dung01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ea65cca5b04c116489b4fb3af67678db,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -561,6 +576,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall_Dung_default (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13db4e8ac431b3b4f8592c457f598acb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -752,8 +772,8 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.28882167, g: 0.31182712, b: 0.3584906, a: 1}
-  m_Intensity: 600
+  m_Color: {r: 0.5686275, g: 0.6117647, b: 0.7058824, a: 1}
+  m_Intensity: 750
   m_Range: 32.885662
   m_SpotAngle: 179
   m_InnerSpotAngle: 130.33075
@@ -798,7 +818,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 17031
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 2.1e-44, z: 1.49433e-40, w: 0}
+  m_BoundingSphereOverride: {x: 1.5551434e+31, y: 893.7031, z: 2.8572842e+32, w: 6.2115285e+22}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -880,6 +900,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Floor_Dung01 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ea65cca5b04c116489b4fb3af67678db,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -996,7 +1021,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1.5551434e+31, y: 893.7031, z: 2.8572842e+32, w: 6.2115285e+22}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -1069,7 +1094,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.8679245, g: 0.5404182, b: 0.35535777, a: 1}
-  m_Intensity: 8
+  m_Intensity: 12
   m_Range: 14.3
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1114,7 +1139,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1.5551434e+31, y: 893.7031, z: 2.8572842e+32, w: 6.2115285e+22}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -1128,7 +1153,7 @@ Transform:
   m_GameObject: {fileID: 321340413}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.369999, y: -3.5440001, z: 2.0110016}
+  m_LocalPosition: {x: 14.369999, y: -5.38, z: 2.0110016}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1192,8 +1217,8 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.28882167, g: 0.31182712, b: 0.3584906, a: 1}
-  m_Intensity: 600
+  m_Color: {r: 0.5686275, g: 0.6117647, b: 0.7058824, a: 1}
+  m_Intensity: 750
   m_Range: 32.885662
   m_SpotAngle: 179
   m_InnerSpotAngle: 130.33075
@@ -1238,7 +1263,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 17031
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 2.1e-44, z: 1.49433e-40, w: 0}
+  m_BoundingSphereOverride: {x: 7.51e-43, y: 2.538e-42, z: 0, w: 8.798919e-28}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -1339,6 +1364,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Dung01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ea65cca5b04c116489b4fb3af67678db,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1406,6 +1436,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Floor_Dung01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ea65cca5b04c116489b4fb3af67678db,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1475,6 +1510,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Dung_default (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13db4e8ac431b3b4f8592c457f598acb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1543,6 +1583,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Dung_default (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13db4e8ac431b3b4f8592c457f598acb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1610,6 +1655,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Floor_Dung01 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ea65cca5b04c116489b4fb3af67678db,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1714,7 +1764,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 4.1599e-41, y: 0, z: 0, w: -2.6557736e-14}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -1802,6 +1852,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall N
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13db4e8ac431b3b4f8592c457f598acb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1945,7 +2000,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 1.3e-44, z: 6.2571e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -2028,6 +2083,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Dung01 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ea65cca5b04c116489b4fb3af67678db,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2095,6 +2155,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall_Dung_default (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13db4e8ac431b3b4f8592c457f598acb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2211,7 +2276,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 1e-44, z: 7.227e-41, w: 1.02660386e-26}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -2283,8 +2348,8 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.28882167, g: 0.31182712, b: 0.3584906, a: 1}
-  m_Intensity: 600
+  m_Color: {r: 0.5686275, g: 0.6117647, b: 0.7058824, a: 1}
+  m_Intensity: 750
   m_Range: 32.885662
   m_SpotAngle: 179
   m_InnerSpotAngle: 130.33075
@@ -2329,7 +2394,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 17031
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 2.1e-44, z: 1.49433e-40, w: 0}
+  m_BoundingSphereOverride: {x: 7.5e-43, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -2357,10 +2422,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 14225711}
     m_Modifications:
+    - target: {fileID: 323869801446472990, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239186561646190699, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748776199075411529, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1850988353860301690, guid: f791b49a5aaf4214681276d0df92e1cd,
         type: 3}
       propertyPath: m_Name
       value: FogWall O
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850988353860301690, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3671322866851748534, guid: f791b49a5aaf4214681276d0df92e1cd,
         type: 3}
@@ -2410,6 +2495,41 @@ PrefabInstance:
     - target: {fileID: 3671322866851748534, guid: f791b49a5aaf4214681276d0df92e1cd,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4548264683420760987, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4827937638850221236, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5406154096293996837, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5428499357826910369, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7012336717172996668, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9110378118128688122, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9141857835793124499, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2490,6 +2610,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Dung01 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ea65cca5b04c116489b4fb3af67678db,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2557,6 +2682,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Floor_Dung01 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ea65cca5b04c116489b4fb3af67678db,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2626,6 +2756,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Dung01 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ea65cca5b04c116489b4fb3af67678db,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2639,10 +2774,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 14225711}
     m_Modifications:
+    - target: {fileID: 323869801446472990, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239186561646190699, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748776199075411529, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1850988353860301690, guid: f791b49a5aaf4214681276d0df92e1cd,
         type: 3}
       propertyPath: m_Name
       value: FogWall W
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850988353860301690, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3671322866851748534, guid: f791b49a5aaf4214681276d0df92e1cd,
         type: 3}
@@ -2692,6 +2847,41 @@ PrefabInstance:
     - target: {fileID: 3671322866851748534, guid: f791b49a5aaf4214681276d0df92e1cd,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4548264683420760987, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4827937638850221236, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5406154096293996837, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5428499357826910369, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7012336717172996668, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9110378118128688122, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9141857835793124499, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2807,7 +2997,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 1e-45, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -2876,6 +3066,7 @@ Transform:
   - {fileID: 2104251824}
   - {fileID: 209965110}
   - {fileID: 1754290357}
+  - {fileID: 1693853133}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &939151508
@@ -3007,6 +3198,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Dung01 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ea65cca5b04c116489b4fb3af67678db,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3074,6 +3270,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall_Dung_default (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13db4e8ac431b3b4f8592c457f598acb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3157,6 +3358,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: piece of papa (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 57dba52c1fd701441941e43811633932,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3252,7 +3458,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.8679245, g: 0.5404182, b: 0.35535777, a: 1}
-  m_Intensity: 8
+  m_Intensity: 12
   m_Range: 14.3
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -3297,7 +3503,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 6e-44, z: 1.7e-44, w: 1.09101e-40}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -3379,6 +3585,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Floor_Dung01 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ea65cca5b04c116489b4fb3af67678db,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3467,6 +3678,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Dung01 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ea65cca5b04c116489b4fb3af67678db,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3534,6 +3750,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall_Dung_default (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13db4e8ac431b3b4f8592c457f598acb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3614,6 +3835,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall S
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13db4e8ac431b3b4f8592c457f598acb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3716,6 +3942,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Dung_default (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13db4e8ac431b3b4f8592c457f598acb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3773,8 +4004,8 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.28882167, g: 0.31182712, b: 0.3584906, a: 1}
-  m_Intensity: 600
+  m_Color: {r: 0.5686275, g: 0.6117647, b: 0.7058824, a: 1}
+  m_Intensity: 750
   m_Range: 32.885662
   m_SpotAngle: 179
   m_InnerSpotAngle: 130.33075
@@ -3819,7 +4050,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 17031
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 2.1e-44, z: 1.49433e-40, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 6e-44, z: 2.1e-44, w: 1.83172e-40}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -3901,6 +4132,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall W
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13db4e8ac431b3b4f8592c457f598acb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4003,6 +4239,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Dung01 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ea65cca5b04c116489b4fb3af67678db,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4071,6 +4312,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall O (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13db4e8ac431b3b4f8592c457f598acb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4134,8 +4380,8 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.28882167, g: 0.31182712, b: 0.3584906, a: 1}
-  m_Intensity: 600
+  m_Color: {r: 0.5686275, g: 0.6117647, b: 0.7058824, a: 1}
+  m_Intensity: 750
   m_Range: 32.885662
   m_SpotAngle: 179
   m_InnerSpotAngle: 130.33075
@@ -4180,7 +4426,8 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 17031
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 2.1e-44, z: 1.49433e-40, w: 0}
+  m_BoundingSphereOverride: {x: 5.9099586e-17, y: -1.6417798e+29, z: -0.0000009984193,
+    w: NaN}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -4262,6 +4509,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Floor_Dung01 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ea65cca5b04c116489b4fb3af67678db,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4362,6 +4614,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Dung01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ea65cca5b04c116489b4fb3af67678db,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4436,6 +4693,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Dung01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ea65cca5b04c116489b4fb3af67678db,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4503,6 +4765,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Floor_Dung01 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ea65cca5b04c116489b4fb3af67678db,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4592,6 +4859,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: piece of papa (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 57dba52c1fd701441941e43811633932,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4690,6 +4962,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Floor_Dung01 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ea65cca5b04c116489b4fb3af67678db,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4792,6 +5069,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: piece of papa (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 57dba52c1fd701441941e43811633932,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4889,6 +5171,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall W (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13db4e8ac431b3b4f8592c457f598acb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4991,6 +5278,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: piece of papa (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 57dba52c1fd701441941e43811633932,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5088,6 +5380,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall_Dung_default (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13db4e8ac431b3b4f8592c457f598acb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5192,7 +5489,8 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 3.1e-44, z: 7.2321e-41, w: 0}
+  m_BoundingSphereOverride: {x: 5.9099586e-17, y: -1.6417798e+29, z: -0.0000009984193,
+    w: NaN}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -5281,6 +5579,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall S (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13db4e8ac431b3b4f8592c457f598acb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5355,6 +5658,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Dung01 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ea65cca5b04c116489b4fb3af67678db,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5422,6 +5730,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall_Dung_default (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13db4e8ac431b3b4f8592c457f598acb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5533,6 +5846,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Dung_default (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13db4e8ac431b3b4f8592c457f598acb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5607,6 +5925,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Dung_default (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13db4e8ac431b3b4f8592c457f598acb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5674,6 +5997,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Floor_Dung01 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ea65cca5b04c116489b4fb3af67678db,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5778,7 +6106,8 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 5.9099586e-17, y: -1.6417798e+29, z: -0.0000009984193,
+    w: NaN}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -5861,6 +6190,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Dung01 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ea65cca5b04c116489b4fb3af67678db,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5921,7 +6255,7 @@ Transform:
   - {fileID: 298562863}
   - {fileID: 1553145270}
   - {fileID: 1988924392}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 939151507}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1694486731
 PrefabInstance:
@@ -5985,6 +6319,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall_Dung_default (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13db4e8ac431b3b4f8592c457f598acb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6115,6 +6454,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall N (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13db4e8ac431b3b4f8592c457f598acb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6178,8 +6522,8 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.28882167, g: 0.31182712, b: 0.3584906, a: 1}
-  m_Intensity: 600
+  m_Color: {r: 0.5686275, g: 0.6117647, b: 0.7058824, a: 1}
+  m_Intensity: 750
   m_Range: 32.885662
   m_SpotAngle: 179
   m_InnerSpotAngle: 130.33075
@@ -6224,7 +6568,8 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 17031
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 2.1e-44, z: 1.49433e-40, w: 0}
+  m_BoundingSphereOverride: {x: 5.9099586e-17, y: -1.6417798e+29, z: -0.0000009984193,
+    w: NaN}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -6423,8 +6768,8 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.28882167, g: 0.31182712, b: 0.3584906, a: 1}
-  m_Intensity: 600
+  m_Color: {r: 0.5686275, g: 0.6117647, b: 0.7058824, a: 1}
+  m_Intensity: 750
   m_Range: 32.885662
   m_SpotAngle: 179
   m_InnerSpotAngle: 130.33075
@@ -6469,7 +6814,8 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 17031
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 2.1e-44, z: 1.49433e-40, w: 0}
+  m_BoundingSphereOverride: {x: 5.9099586e-17, y: -1.6417798e+29, z: -0.0000009984193,
+    w: NaN}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -6593,6 +6939,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: piece of papa (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 57dba52c1fd701441941e43811633932,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6665,6 +7016,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Dung_default (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13db4e8ac431b3b4f8592c457f598acb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6732,6 +7088,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall O
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13db4e8ac431b3b4f8592c457f598acb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6823,8 +7184,8 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.28882167, g: 0.31182712, b: 0.3584906, a: 1}
-  m_Intensity: 600
+  m_Color: {r: 0.5686275, g: 0.6117647, b: 0.7058824, a: 1}
+  m_Intensity: 750
   m_Range: 32.885662
   m_SpotAngle: 179
   m_InnerSpotAngle: 130.33075
@@ -6869,7 +7230,8 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 17031
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 2.1e-44, z: 1.49433e-40, w: 0}
+  m_BoundingSphereOverride: {x: 5.9099586e-17, y: -1.6417798e+29, z: -0.0000009984193,
+    w: NaN}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -6915,10 +7277,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 14225711}
     m_Modifications:
+    - target: {fileID: 323869801446472990, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239186561646190699, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748776199075411529, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1850988353860301690, guid: f791b49a5aaf4214681276d0df92e1cd,
         type: 3}
       propertyPath: m_Name
       value: FogWall S
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850988353860301690, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2776315542786592455, guid: f791b49a5aaf4214681276d0df92e1cd,
         type: 3}
@@ -6973,6 +7355,41 @@ PrefabInstance:
     - target: {fileID: 3671322866851748534, guid: f791b49a5aaf4214681276d0df92e1cd,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4548264683420760987, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4827937638850221236, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5406154096293996837, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5428499357826910369, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7012336717172996668, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9110378118128688122, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9141857835793124499, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7101,7 +7518,8 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 3.1e-44, z: 7.2321e-41, w: 0}
+  m_BoundingSphereOverride: {x: 5.9099586e-17, y: -1.6417798e+29, z: -0.0000009984193,
+    w: NaN}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -7190,6 +7608,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Dung_default (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13db4e8ac431b3b4f8592c457f598acb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7257,6 +7680,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Floor_Dung01
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ea65cca5b04c116489b4fb3af67678db,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7340,6 +7768,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: piece of papa (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 57dba52c1fd701441941e43811633932,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7439,6 +7872,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Dung_default (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13db4e8ac431b3b4f8592c457f598acb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7452,10 +7890,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 14225711}
     m_Modifications:
+    - target: {fileID: 323869801446472990, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239186561646190699, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748776199075411529, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1850988353860301690, guid: f791b49a5aaf4214681276d0df92e1cd,
         type: 3}
       propertyPath: m_Name
       value: FogWall N
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850988353860301690, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3671322866851748534, guid: f791b49a5aaf4214681276d0df92e1cd,
         type: 3}
@@ -7505,6 +7963,41 @@ PrefabInstance:
     - target: {fileID: 3671322866851748534, guid: f791b49a5aaf4214681276d0df92e1cd,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4548264683420760987, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4827937638850221236, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5406154096293996837, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5428499357826910369, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7012336717172996668, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9110378118128688122, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9141857835793124499, guid: f791b49a5aaf4214681276d0df92e1cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7604,6 +8097,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Dung01 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ea65cca5b04c116489b4fb3af67678db,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7667,8 +8165,8 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.28882167, g: 0.31182712, b: 0.3584906, a: 1}
-  m_Intensity: 600
+  m_Color: {r: 0.5686275, g: 0.6117647, b: 0.7058824, a: 1}
+  m_Intensity: 750
   m_Range: 32.885662
   m_SpotAngle: 179
   m_InnerSpotAngle: 130.33075
@@ -7713,7 +8211,8 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 17031
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 2.1e-44, z: 1.49433e-40, w: 0}
+  m_BoundingSphereOverride: {x: 5.9099586e-17, y: -1.6417798e+29, z: -0.0000009984193,
+    w: NaN}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -11216,6 +11715,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: piece of papa (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 57dba52c1fd701441941e43811633932,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11256,4 +11760,3 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 939151507}
-  - {fileID: 1693853133}
