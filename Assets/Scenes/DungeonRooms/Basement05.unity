@@ -2850,6 +2850,7 @@ GameObject:
   - component: {fileID: 939151507}
   - component: {fileID: 939151508}
   - component: {fileID: 939151509}
+  - component: {fileID: 939151510}
   m_Layer: 0
   m_Name: Room
   m_TagString: Untagged
@@ -2926,6 +2927,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 69, y: 69, z: 69}
   m_Center: {x: 35, y: 0, z: 35}
+--- !u!114 &939151510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939151506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a6b78f4b74747c43992d23cd75d80c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grid: {fileID: 1705627247}
+  spawnerData:
+  - name: Worms
+    spawnerData: {fileID: 11400000, guid: e3c0a78fdad1d4d4b996ebae85ddfa6f, type: 2}
+  player: {fileID: 0}
 --- !u!1001 &949830878
 PrefabInstance:
   m_ObjectHideFlags: 0
