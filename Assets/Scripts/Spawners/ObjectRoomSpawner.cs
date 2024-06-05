@@ -11,7 +11,7 @@ public class ObjectRoomSpawner : MonoBehaviour
         public SpawnerData spawnerData;
     }
 
-    public GridController grid;
+    public List<GridController> grid;
     public RandomSpawner[] spawnerData;
 
     public GameObject player;
@@ -28,22 +28,26 @@ public class ObjectRoomSpawner : MonoBehaviour
 
     public void InitialiseObjectSpawning()
     {
-        foreach(RandomSpawner rs in spawnerData)
+        foreach (var gr in grid)
         {
-            SpawnObjects(rs);
+            foreach (RandomSpawner rs in spawnerData)
+            {
+                SpawnObjects(rs, gr);
+            }
         }
+
     }
 
-    void SpawnObjects(RandomSpawner data)
+    void SpawnObjects(RandomSpawner data, GridController gr)
     {
         int randomIteration = Random.Range(data.spawnerData.minSpawn, data.spawnerData.maxSpawn + 1);
 
         for (int i = 0; i < randomIteration; i++)
         {
-            int randomPos = Random.Range(0, grid.availablePoints.Count - 1);
-            GameObject go = Instantiate(data.spawnerData.itemToSpawn, grid.availablePoints[randomPos], Quaternion.identity, transform);
+            int randomPos = Random.Range(0, gr.availablePoints.Count - 1);
+            GameObject go = Instantiate(data.spawnerData.itemToSpawn, gr.availablePoints[randomPos], Quaternion.identity, transform);
 
-            grid.availablePoints.RemoveAt(randomPos);
+            gr.availablePoints.RemoveAt(randomPos);
         }
     }
 }

@@ -15,6 +15,8 @@ public class EnemyBehaviour : MonoBehaviour
     public Animator animator;
     public Image healthBar;
     public List<GameObject> targets;
+    private float damageTimer = 0.2f;
+    private bool isDamageable = true;
 
     public static event System.Action<EnemyStates> OnEnemyStateChanged;
     private void Awake()
@@ -55,16 +57,37 @@ public class EnemyBehaviour : MonoBehaviour
                 return;
             }
         }
-        if (collision.gameObject.CompareTag("bullet"))
+        if (collision.gameObject.CompareTag("bullet") && isDamageable)
         {
             DealDamage(GameManager.instance.gunStats[StatsGun.damage]);
-        }
-
-        if (collision.gameObject.CompareTag("PlayerSword"))
-        {
-            DealDamage(GameManager.instance.gunStats[StatsGun.swordDamage]);
+            isDamageable = false;
+            StartCoroutine(DamageTimer());
         }
     }
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("PlayerSword") && isDamageable)
+        {
+            DealDamage(GameManager.instance.gunStats[StatsGun.swordDamage]);
+            isDamageable = false;
+            Debug.Log("Hit");
+            StartCoroutine(DamageTimer());
+        }
+    }
+
+    IEnumerator DamageTimer()
+    {
+        float timer = 0f;
+
+        while (timer < damageTimer)
+        {
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
+        isDamageable = true;
+    }
+
     public void changeHealthVisibility()
     {
         healthBar.gameObject.SetActive(!healthBar.gameObject.activeSelf);
@@ -77,7 +100,6 @@ public class EnemyBehaviour : MonoBehaviour
         if (enemyStats[StatsEnemies.hitPoints] <= 0)
         {
             UpdateEnemyState(EnemyStates.dying);
-            Destroy(gameObject);
         }
         Debug.Log(StatsEnemies.hitPoints);
     }
@@ -140,5 +162,6 @@ public class EnemyBehaviour : MonoBehaviour
     private void HandleDying()
     {
         GetComponentInParent<Room>().enemies.Remove(this);
+        Destroy(gameObject);
     }
 }

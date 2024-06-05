@@ -1051,7 +1051,7 @@ MonoBehaviour:
   grid: {fileID: 1775658119}
   spawnerData:
   - name: 
-    spawnerData: {fileID: 11400000, guid: b0371e35a6c7a924794eeb0f39f82c8a, type: 2}
+    spawnerData: {fileID: 11400000, guid: e3c0a78fdad1d4d4b996ebae85ddfa6f, type: 2}
   player: {fileID: 2711672269534722778}
 --- !u!65 &300994450
 BoxCollider:
@@ -1404,6 +1404,7 @@ MonoBehaviour:
   player: {fileID: 2711672269534722778}
   inventoryMenu: {fileID: 8487952124270879453}
   deathScreen: {fileID: 1889371900}
+  loadingScreen: {fileID: 0}
 --- !u!43 &516964628
 Mesh:
   m_ObjectHideFlags: 0
@@ -6862,65 +6863,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &2065297711
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2065297712}
-  - component: {fileID: 2065297713}
-  m_Layer: 11
-  m_Name: SchwertCollider
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2065297712
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2065297711}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.25176185, y: 0.027884876, z: -0.10649596, w: 0.96150774}
-  m_LocalPosition: {x: 0.0017575752, y: 0.009116547, z: -0.0017678064}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2075525413}
-  m_LocalEulerAnglesHint: {x: -28.568, y: 7.014, z: -14.428}
---- !u!65 &2065297713
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2065297711}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.0054893047, y: 0.02424248, z: 0.0039688735}
-  m_Center: {x: 0.02177521, y: 0.0013101911, z: -0.010746818}
---- !u!4 &2075525413 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6793009810027377951, guid: 6f33ae35152f38749b08aa3dc33d38ad,
-    type: 3}
-  m_PrefabInstance: {fileID: 8892929387044484434}
-  m_PrefabAsset: {fileID: 0}
 --- !u!43 &2128003375
 Mesh:
   m_ObjectHideFlags: 0
@@ -7194,21 +7136,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 505064276939488977, guid: 6f33ae35152f38749b08aa3dc33d38ad,
-        type: 3}
-      propertyPath: m_TagString
-      value: PlayerSword
-      objectReference: {fileID: 0}
-    - target: {fileID: 569772026186813912, guid: 6f33ae35152f38749b08aa3dc33d38ad,
-        type: 3}
-      propertyPath: sensX
-      value: 700
-      objectReference: {fileID: 0}
-    - target: {fileID: 569772026186813912, guid: 6f33ae35152f38749b08aa3dc33d38ad,
-        type: 3}
-      propertyPath: sensY
-      value: 700
-      objectReference: {fileID: 0}
     - target: {fileID: 1197218097198964357, guid: 6f33ae35152f38749b08aa3dc33d38ad,
         type: 3}
       propertyPath: healthbar
@@ -7269,18 +7196,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6622887373138840098, guid: 6f33ae35152f38749b08aa3dc33d38ad,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 6793009810027377951, guid: 6f33ae35152f38749b08aa3dc33d38ad,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2065297712}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f33ae35152f38749b08aa3dc33d38ad, type: 3}
 --- !u!1660057539 &9223372036854775807
