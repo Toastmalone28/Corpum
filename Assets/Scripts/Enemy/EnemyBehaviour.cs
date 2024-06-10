@@ -161,7 +161,7 @@ public class EnemyBehaviour : MonoBehaviour
 
     private void HandleDying()
     {
-        GetComponentInParent<Room>().enemies.Remove(this);
+        RoomController.instance.currRoom.enemies.Remove(this);
         Destroy(gameObject);
     }
 }

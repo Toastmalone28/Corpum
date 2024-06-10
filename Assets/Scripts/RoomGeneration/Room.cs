@@ -231,9 +231,9 @@ public class Room : MonoBehaviour
     }
     private void EnemyBehaviourOnEnemyStateChanged(EnemyStates states)
     {
-        if(enemies.Count == 0)
+        if(RoomController.instance.currRoom.enemies.Count == 0)
         {
-            RoomController.instance.UpdateRoomState(this, RoomState.cleared);
+            RoomController.instance.UpdateRoomState(RoomController.instance.currRoom, RoomState.cleared);
         }
     }
 }
