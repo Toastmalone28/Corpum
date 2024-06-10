@@ -4936,7 +4936,7 @@ MonoBehaviour:
   - {fileID: 998662740}
   spawnerData:
   - name: Worms
-    spawnerData: {fileID: 11400000, guid: e3c0a78fdad1d4d4b996ebae85ddfa6f, type: 2}
+    spawnerData: {fileID: 11400000, guid: b0371e35a6c7a924794eeb0f39f82c8a, type: 2}
   player: {fileID: 0}
 --- !u!1001 &892773497
 PrefabInstance:

@@ -74,5 +74,6 @@ public class ChimeraBehaviour : EnemyBehaviour
     private void OnDestroy()
     {
         GameManager.instance.gameState = GameState.victory;
+        Debug.Log("VICTORY");
     }
 }
