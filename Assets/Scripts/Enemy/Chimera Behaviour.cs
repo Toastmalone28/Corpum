@@ -71,4 +71,8 @@ public class ChimeraBehaviour : EnemyBehaviour
         }
         attackReady = true;
     }
+    private void OnDestroy()
+    {
+        GameManager.instance.gameState = GameState.victory;
+    }
 }
