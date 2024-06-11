@@ -106,7 +106,8 @@ public class GameManager : MonoBehaviour
 
     private void HandleVictory()
     {
-        SceneManager.LoadScene("BasementMain");
+        Debug.Log("VICTORY");
+        SceneManager.LoadScene("Mainmenu");
     }
 
     private void HandleCutscene()
