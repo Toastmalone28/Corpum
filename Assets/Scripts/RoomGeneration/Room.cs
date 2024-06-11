@@ -220,6 +220,10 @@ public class Room : MonoBehaviour
             {
                 door.gameObject.SetActive(true);
             }
+            if (RoomController.instance.currRoom.enemies.Count == 0)
+            {
+                RoomController.instance.UpdateRoomState(RoomController.instance.currRoom, RoomState.cleared);
+            }
         }
         if(state == RoomState.cleared)
         {

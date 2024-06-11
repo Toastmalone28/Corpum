@@ -223,6 +223,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f33ae35152f38749b08aa3dc33d38ad, type: 3}
+--- !u!1 &226088669 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1968566546968676553, guid: 6f33ae35152f38749b08aa3dc33d38ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 226088668}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &241548406
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,7 +596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e490bdb19967746ba8bc9997d1206c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 226088669}
   inventoryMenu: {fileID: 518808355}
   deathScreen: {fileID: 438419614}
   loadingScreen: {fileID: 1231850249}
