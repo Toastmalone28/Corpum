@@ -45,9 +45,11 @@ public class ObjectRoomSpawner : MonoBehaviour
         for (int i = 0; i < randomIteration; i++)
         {
             int randomPos = Random.Range(0, gr.availablePoints.Count - 1);
-            GameObject go = Instantiate(data.spawnerData.itemToSpawn, gr.availablePoints[randomPos], Quaternion.identity, transform);
-
-            gr.availablePoints.RemoveAt(randomPos);
+            if(gr.availablePoints.Count > 1)
+            {
+                GameObject go = Instantiate(data.spawnerData.itemToSpawn, gr.availablePoints[randomPos], Quaternion.identity, transform);
+                gr.availablePoints.RemoveAt(randomPos);
+            }
         }
     }
 }
