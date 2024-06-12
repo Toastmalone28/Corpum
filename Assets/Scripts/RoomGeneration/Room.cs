@@ -218,7 +218,7 @@ public class Room : MonoBehaviour
         {
             foreach (Door door in doors)
             {
-                door.gameObject.SetActive(true);
+                door.ChangeState();
             }
             if (RoomController.instance.currRoom.enemies.Count == 0)
             {
@@ -229,7 +229,7 @@ public class Room : MonoBehaviour
         {
             foreach (Door door in doors)
             {
-                door.gameObject.SetActive(false);
+                door.ChangeState();
             }
         }
     }

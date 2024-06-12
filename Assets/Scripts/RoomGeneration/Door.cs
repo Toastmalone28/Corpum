@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -9,4 +10,9 @@ public class Door : MonoBehaviour
     }
 
     public DoorType doorType;
+
+    internal void ChangeState()
+    {
+        gameObject.SetActive(!gameObject.activeSelf);
+    }
 }
