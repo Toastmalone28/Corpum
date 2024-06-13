@@ -17,6 +17,7 @@ public class EnemyBehaviour : MonoBehaviour
     public List<GameObject> targets;
     private float damageTimer = 0.2f;
     private bool isDamageable = true;
+    private bool isBoss;
 
     public static event System.Action<EnemyStates> OnEnemyStateChanged;
     private void Awake()
@@ -26,6 +27,8 @@ public class EnemyBehaviour : MonoBehaviour
         player = GameObject.FindWithTag("Player");
         healthBar.type = Image.Type.Filled;
         animator = GetComponentInChildren<Animator>();
+        if (this.name.Contains("Chimera"))
+            isBoss = true;
     }
 
     // Update is called once per frame
@@ -71,7 +74,13 @@ public class EnemyBehaviour : MonoBehaviour
             DealDamage(GameManager.instance.gunStats[StatsGun.swordDamage]);
             isDamageable = false;
             Debug.Log("Hit");
+            if (!isBoss)
+            {
+                ApplyKnockback();
+            }
+            
             StartCoroutine(DamageTimer());
+            
         }
     }
 
@@ -164,4 +173,32 @@ public class EnemyBehaviour : MonoBehaviour
         RoomController.instance.currRoom.enemies.Remove(this);
         Destroy(gameObject);
     }
+
+    public void ApplyKnockback()
+    {
+
+        Vector3 knockbackDirection = this.transform.position - player.transform.position;
+        knockbackDirection.Normalize();
+        knockbackDirection.y += 0.2f;
+        Vector3 targetPosition = this.transform.position + knockbackDirection * 1f;
+        StartCoroutine(PerformKnockback(targetPosition));
+    }
+
+    private IEnumerator PerformKnockback(Vector3 targetPosition)
+    {
+        float elapsed = 0f;
+        Vector3 initialPosition = this.transform.position;
+
+        while (elapsed < 1f)
+        {
+            // Lerp zwischen der aktuellen Position und der Zielposition
+            this.transform.position = Vector3.Lerp(initialPosition, targetPosition, elapsed / 0.2f);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        // Stelle sicher, dass die Endposition exakt gesetzt wird
+        this.transform.position = targetPosition;
+    }
+
 }
