@@ -41,7 +41,7 @@ public class RoomController : MonoBehaviour
         private set { updatedRooms = value; }
     }
 
-    public static event Action<RoomState> OnRoomStateChanged;
+    public static event Action<Room, RoomState> OnRoomStateChanged;
 
     private void Awake()
     {
@@ -271,7 +271,7 @@ public class RoomController : MonoBehaviour
                 break;
         }
 
-        OnRoomStateChanged?.Invoke(state);
+        OnRoomStateChanged?.Invoke(room, state);
     }
 
     private void HandleCleared()

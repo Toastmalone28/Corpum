@@ -35,7 +35,7 @@ public class Room : MonoBehaviour
 
     // Enemies in the room
     public List<EnemyBehaviour> enemies = new List<EnemyBehaviour>();
-    public RoomState roomState;
+    public RoomState roomState = RoomState.inactive;
 
     private void Awake()
     {
@@ -212,8 +212,11 @@ public class Room : MonoBehaviour
             RoomController.instance.UpdateRoomState(this, RoomState.combat);
         }
     }
-    private void RoomControllerOnRoomStateChanged(RoomState state)
+    private void RoomControllerOnRoomStateChanged(Room room, RoomState state)
     {
+        if (room != this)
+            return;
+
         if(state == RoomState.combat)
         {
             foreach (Door door in doors)
