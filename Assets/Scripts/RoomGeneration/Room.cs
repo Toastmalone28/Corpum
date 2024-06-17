@@ -221,18 +221,18 @@ public class Room : MonoBehaviour
         {
             foreach (Door door in doors)
             {
-                door.ChangeState();
+                door.gameObject.SetActive(true);
             }
             if (RoomController.instance.currRoom.enemies.Count == 0)
             {
                 RoomController.instance.UpdateRoomState(RoomController.instance.currRoom, RoomState.cleared);
             }
         }
-        if(state == RoomState.cleared)
+        else if(state == RoomState.cleared)
         {
             foreach (Door door in doors)
             {
-                door.ChangeState();
+                door.gameObject.SetActive(false);
             }
         }
     }
