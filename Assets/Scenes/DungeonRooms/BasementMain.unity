@@ -138,6 +138,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e7adffabb507fc540a73a2845762413c, type: 2}
+    - target: {fileID: 569772026186813912, guid: 6f33ae35152f38749b08aa3dc33d38ad,
+        type: 3}
+      propertyPath: sensX
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 569772026186813912, guid: 6f33ae35152f38749b08aa3dc33d38ad,
+        type: 3}
+      propertyPath: sensY
+      value: 600
+      objectReference: {fileID: 0}
     - target: {fileID: 1197218097198964357, guid: 6f33ae35152f38749b08aa3dc33d38ad,
         type: 3}
       propertyPath: healthbar
