@@ -14,35 +14,40 @@ public class ChimeraBehaviour : EnemyBehaviour
     private bool attackReady = true;
     public BossProjectile proj;
     private GameObject head;
+    private float startTimer = 0f;
 
 
     void Update()
     {
-        if (head == null)
-            head = GameObject.FindWithTag("BossHead");
+        if ((startTimer += Time.deltaTime) > 5f)
+        {
+            if (head == null)
+                head = GameObject.FindWithTag("BossHead");
+            Debug.Log(distanceToPlayer);
+            distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
+            if (distanceToPlayer < 6f && attackReady)
+            {
+                animator.SetTrigger("swipeAttack");
 
-        distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
-        if (distanceToPlayer < 6 && attackReady)
-        {
-            animator.SetTrigger("swipeAttack");
-            
-            StartCoroutine(SwipeTimer());
-        }
-        else
-        {
-            //animator.SetBool("swipeAttackRange", false);
-        }
+                StartCoroutine(SwipeTimer());
+            }
+            else
+            {
+                //animator.SetBool("swipeAttackRange", false);
+            }
 
-        if (distanceToPlayer >= 6 && attackReady)
-        {
-            animator.SetTrigger("shootAttack");
+            if (distanceToPlayer >= 6f && attackReady)
+            {
+                animator.SetTrigger("shootAttack");
 
-            StartCoroutine(ShootTimer());
+                StartCoroutine(ShootTimer());
+            }
+            else
+            {
+                //  animator.SetBool("shootAttack", false);
+            }
         }
-        else
-        {
-          //  animator.SetBool("shootAttack", false);
-        }
+        
     }
 
     IEnumerator ShootTimer()
