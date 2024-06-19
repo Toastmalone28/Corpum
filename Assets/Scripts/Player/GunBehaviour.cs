@@ -12,12 +12,15 @@ public class GunBehaviour : MonoBehaviour
     public Transform barrel;
     private Animator character;
     public GameObject orientation;
+    public AudioSource shotSFX;
+
     //private int ammo = 10;
     private WeaponStates weaponState;
     private float reloadTime = 3.3f;
     private float shootTime = 0.5f;
     private float swordTime = 1.6f;
     private int amountToShoot = 1;
+
 
     IEnumerator ShotTimer()
     {
@@ -102,6 +105,7 @@ public class GunBehaviour : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
         character.SetTrigger("shoot");
+        shotSFX.Play();
         //?
         GameManager.instance.gunStats[StatsGun.clipCapacity]--;
         weaponState = WeaponStates.Shooting;

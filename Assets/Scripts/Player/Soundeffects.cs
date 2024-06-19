@@ -4,12 +4,7 @@ using UnityEngine;
 
 public class Soundeffects : MonoBehaviour
 {
-    private AudioSource steps;
-    // Start is called before the first frame update
-    void Start()
-    {
-        steps = GetComponent<AudioSource>();
-    }
+    public AudioSource steps;
 
     // Update is called once per frame
     void Update()
