@@ -42,10 +42,10 @@ public class EnemyBehaviour : MonoBehaviour
     {
         enemyStats = new Dictionary<StatsEnemies, float>
         {
-            { StatsEnemies.maxHitPoints, 100f },
-            { StatsEnemies.hitPoints, 100f },
+            { StatsEnemies.maxHitPoints, 50f },
+            { StatsEnemies.hitPoints, 50f },
             { StatsEnemies.armor, 1f },
-            { StatsEnemies.damage, 10f }
+            { StatsEnemies.damage, 5f }
         };
     }
 
