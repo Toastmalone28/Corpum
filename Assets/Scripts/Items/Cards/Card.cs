@@ -72,7 +72,8 @@ public class Card : MonoBehaviour
     {
         canvas = GetComponentInChildren<Canvas>();
         itemText = canvas.GetComponentInChildren<TMP_Text>();
-        itemText.text = card.name;
+        if(card != null)
+            itemText.text = card.name;
         itemText.enabled = false;
         player = GameObject.FindGameObjectWithTag("Player");
     }

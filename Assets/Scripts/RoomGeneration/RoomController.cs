@@ -91,7 +91,7 @@ public class RoomController : MonoBehaviour
                 AstarPath.active.Scan();
                 GameManager.instance.UpdateGameState(GameState.running);
             }
-            if(spawnedBossRoom && loadedRooms[loadedRooms.Count - 1].enemies.Count == 0)
+            if(spawnedBossRoom && spawnedItemRoom && loadedRooms[loadedRooms.Count - 1].enemies.Count == 0)
             {
                 UpdateRooms();
             }

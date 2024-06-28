@@ -11,7 +11,8 @@ public class Room : MonoBehaviour
     public int X;
     public int Y;
 
-    private bool updatedDoors = false;
+    private bool updatedItemDoors = false;
+    private bool updatedEndDoors = false;
 
     public Room(int x, int y)
     {
@@ -99,11 +100,17 @@ public class Room : MonoBehaviour
 
     private void Update()
     {
-        if (name.Contains("End") && !updatedDoors)
+        if (name.Contains("Item"))
         {
             RemoveUnconnectedWalls();
             RemoveUnconnectedDoors();
-            updatedDoors = true;
+            updatedItemDoors = true;
+        }
+        if (name.Contains("End"))
+        {
+            RemoveUnconnectedWalls();
+            RemoveUnconnectedDoors();
+            updatedEndDoors = true;
         }
     }
 
@@ -209,7 +216,10 @@ public class Room : MonoBehaviour
         if(other.tag == "Player")
         {
             RoomController.instance.OnPlayerEnterRoom(this);
-            RoomController.instance.UpdateRoomState(this, RoomState.combat);
+            if(enemies.Count != 0)
+                RoomController.instance.UpdateRoomState(this, RoomState.combat);
+            else
+                RoomController.instance.UpdateRoomState(this, RoomState.cleared);
         }
     }
     private void RoomControllerOnRoomStateChanged(Room room, RoomState state)

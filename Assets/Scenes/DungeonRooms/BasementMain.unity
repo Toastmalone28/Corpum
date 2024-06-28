@@ -2085,6 +2085,7 @@ MonoBehaviour:
   currRoom: {fileID: 0}
   possibleRooms:
   - 02
+  - 03
   - 04
   - 05
   - 06

@@ -6,11 +6,13 @@ public class DeathBox : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-       if(other.GetComponent<EnemyBehaviour>() != null)
-        other.GetComponent<EnemyBehaviour>().UpdateEnemyState(EnemyStates.dying);
-       else if (other.tag == "Player")
+        EnemyBehaviour currentEnemy = other.gameObject.GetComponentInParent<EnemyBehaviour>();
+        if(currentEnemy != null)
+            currentEnemy.UpdateEnemyState(EnemyStates.dying);
+        if (other.tag == "Player")
         {
             GameManager.instance.UpdateGameState(GameState.defeat);
+            return;
         }
     }
 }
